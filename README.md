@@ -12,11 +12,20 @@ formatting options.
 - [ ] C Programming: Become A Pro! Think Like A Programmer! - _Udemy_
 - [ ] Mastering Data Structures & Algorithms Using C and C++ - _Udemy_
 
+### Books
+- [ ] Code: The Hidden Language of Computer Hardware and Software by Charles Petzold
+- [ ] The Art of Clean Code by Christian Mayer
+- [ ] The Missing Readme by Dmitriy Ryaboy
+
 ### Skills & Experience
 - C/C++
 - Python
 - Django
-- HTML/CSS
+- HTML/CSS 
 - SQLite
 - Git
 - Linux
+
+### Interests
+- Embedded Systems
+- WebAssembly
