@@ -9,13 +9,14 @@ formatting options.
 
 ### Courses
 - [x] CS50x - _Harvard edX_ 12/16/2022
-- [ ] C Programming: Become A Pro! Think Like A Programmer! - _Udemy_
+- [x] C Programming: Become A Pro! Think Like A Programmer! - _Udemy_ 12/30/2022
 - [ ] Mastering Data Structures & Algorithms Using C and C++ - _Udemy_
 
 ### Books
 - [ ] Code: The Hidden Language of Computer Hardware and Software by Charles Petzold
 - [ ] The Art of Clean Code by Christian Mayer
 - [ ] The Missing Readme by Dmitriy Ryaboy
+- [ ] Bare Metal C by Steve Oualline
 
 ### Skills & Experience
 - C/C++
