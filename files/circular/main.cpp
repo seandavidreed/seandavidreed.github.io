@@ -13,13 +13,13 @@ public:
     Node *head;
     unsigned numNodes;
 
-    // Constructor WORKS
+    // Constructor
     CircleLink() {
         head = nullptr;
         numNodes = 0;
     }
 
-    // Destructor WORKS
+    // Destructor
     ~CircleLink() {
         Node *destroy;
         for (int i = 0; i < numNodes; ++i) {
@@ -46,6 +46,21 @@ public:
         }
 
         ++numNodes;
+    }
+
+    void deleteNode(unsigned value) {
+        Node *ptr = head;
+        for (int i = 0; i < numNodes; ++i) {
+            if (ptr->value == value) {
+                ptr->previous->next = ptr->next;
+                ptr->next->previous = ptr->previous;
+                delete ptr;
+                --numNodes;
+                return;
+            }
+
+            ptr = ptr->next;
+        }
     }
 
     void mitosis(CircleLink& newList) {
@@ -138,6 +153,10 @@ int main() {
 
     std::cout << "Rotate by -6:" << std::endl;
     list.rotate(-6);
+
+    std::cout << "Print List with deleted node:" << std::endl;
+    list.deleteNode(7);
+    list.print();
 
     std::cout << "Perform Mitosis First Time:" << std::endl;
 
