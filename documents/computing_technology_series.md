@@ -14,11 +14,13 @@ The Intel 4004 was capable of executing between 46,250 and 92,500 instructions p
 The list of instructions a CPU supports is called its instruction set. Each processors machine code instruction set is assigned a human-readible presentation called an Assembly Language.
 
 We can think of a CPU as an instruction processing machine. They operate by looping through three basic steps:
+
   1. Fetch
   2. Decode
   3. Execute
 
 CLASSIC RISC PIPELINE (Reduced Instruction Set Computer)
+
   1. The CPU pulls information from outside itself, forms operations within its environment, and then returns data back.
   2. The data is stored in RAM (Random Access Memory).
   3. The mechanism by which data goes back and forth from RAM to CPU is called a bus, which can be thought of as a superhighway.
