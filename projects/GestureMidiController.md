@@ -42,3 +42,41 @@ In studying these things, I'm getting a good picture of just how far I have to g
 - Simple program handles sine waves and square waves with polyphony! The computer fans get pretty loud while this program runs, so I'm pretty sure its very inefficient. Here's a [link](../files/sfmlPractice0/main.cpp).
 
 The next step for this project is to improve the current while loop with the use of events. Furthermore, I'd like to start exploring the embedded side soon.
+
+### 2/21/2023
+Worked out some of the kinks in my implementation of TriangleWave and SawToothWave. I'm still a little unsure why they are quieter than the SineWave and SquareWave. Also, sometimes certain notes in the scale are louder than others; I haven't figured out why that is. I want to see if SFML will let me render a graph to display the waveform. That would really help me see what is going on with these functions:
+
+```
+short SawToothWave(int samplePart, double frequency, double amplitude) {
+    int samplesPerCycle = static_cast<int>(SAMPLE_RATE / frequency);
+    int halfCycle {samplesPerCycle / 2};
+    // Treat each cycle as its own discrete set
+    int cyclePart {samplePart % samplesPerCycle};
+    short amp = static_cast<short>(MAX_AMP * amplitude);
+
+    short result;
+    if (cyclePart < halfCycle) {
+        result = static_cast<short>(amp * (cyclePart / halfCycle));
+    } else {
+        result = static_cast<short>(amp * ((cyclePart - samplesPerCycle) / halfCycle));
+    }
+    return result;
+}
+
+short TriangleWave(int samplePart, double frequency, double amplitude) {
+    int samplesPerCycle = static_cast<int>(SAMPLE_RATE / frequency);
+    // Treat each cycle as its own discrete set
+    int cyclePart {samplePart % samplesPerCycle};
+    int halfCycle {samplesPerCycle / 2};
+    short amp = static_cast<short>(MAX_AMP * amplitude);
+
+    short result;
+    if (cyclePart < halfCycle) {
+        result = static_cast<short>(amp * (cyclePart / halfCycle));
+    } else {
+        result = static_cast<short>(amp * ((samplesPerCycle - cyclePart) / halfCycle));
+    }
+    return result;
+}
+```
+
