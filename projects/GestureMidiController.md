@@ -1,4 +1,4 @@
-# WebAssembly Gesture Controlled Synthesizer
+# Gesture MIDI Controller
 
 ### 2/19/2023
 Today, I began brainstorming: how could I start a project that would have personal significance, practicability, and that would help solidify what I’m learning? Once again, synths and audio came to mind. After roaming the internet, I’ve decided to try to build a web application that can generate audio controlled by hand gestures! This file will document the research and build process. Here are the initial steps I've taken:
@@ -13,14 +13,14 @@ I studied the program produced by yesterdays tutorial and I browsed the SFML API
 ```
 // SAMPLE_RATE = 44100; MAX_AMP = 32767 (max positive value of signed short)
 short SineWave(double time, double freq, double amp) {
-        double tpc {SAMPLE_RATE / freq}; // ticks per cycle
-        double cycles {time / tpc};
-        double rad {TWOPI * cycles};
-        short amplitude = static_cast<short>(MAX_AMP * amp);
+    double tpc {SAMPLE_RATE / freq}; // ticks per cycle
+    double cycles {time / tpc};
+    double rad {TWOPI * cycles};
+    short amplitude = static_cast<short>(MAX_AMP * amp);
 
-        short result = static_cast<short>(amplitude * sin(rad));
-        return result;
-    }
+    short result = static_cast<short>(amplitude * sin(rad));
+    return result;
+}
 ```
 
 In studying these things, I'm getting a good picture of just how far I have to go. Now I know that I need to gain a better understanding of the science of sound and how it is represented in a digital environment. Here's my first benchmark: I will build a simple synth that responds to key presses and generates a particular pitch for as long as the key is pressed.
@@ -80,3 +80,4 @@ short TriangleWave(int samplePart, double frequency, double amplitude) {
 }
 ```
 
+Later today, I read up on the Graphics module in SFML and how to use the RenderWindow class. Using a VertexArray, I was able to successfully represent the sine wave for one of my tones in a separate window! However, when I tried to apply it to every tone, I couldn’t get the vertices to behave properly and they didn’t print in the window. I’ll try again tomorrow.
