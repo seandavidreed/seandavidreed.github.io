@@ -81,3 +81,25 @@ short TriangleWave(int samplePart, double frequency, double amplitude) {
 ```
 
 Later today, I read up on the Graphics module in SFML and how to use the RenderWindow class. Using a VertexArray, I was able to successfully represent the sine wave for one of my tones in a separate window! However, when I tried to apply it to every tone, I couldn’t get the vertices to behave properly and they didn’t print in the window. I’ll try again tomorrow.
+
+### 2/22/2023 [sfmlPractice1](../files/sfmlPractice1/main.cpp)
+Using the same for loop as with the samples, I was able to initialize an SFML type VertexArray with the sample values as coordinate points. I found that I had already done this correctly yesterday. The real problem was with the main program loop, where I did not call the `ss::RenderWindow` method `RenderWindow::display()` after each draw event. I learned that all changes made to the RenderWindow object will only be seen after the `RenderWindow::display()` method is called.
+
+With the waveforms visible in the window, I was able to see what was wrong with `SawToothWave()` and `TriangleWave()`, the two functions that were left to me to design in the tutorial video. Their structures were completely wrong. For a while I thought it was only an issue with the formula I wrote, but when a new formula, mathematically identical to the previous ones that failed, suddenly worked, I realized that I had been facing a data type error all along. In the complexity of mingling `short`, `double`, and `int`, there had been too many narrowing conversions, explicit and implicit, that had corrupted the data. To solve the problem, I made everything type `double` and only called `static_cast<short>` at the very end for the return result:
+
+```
+short SawToothWave(int samplePart, double frequency, double amplitude) {
+    int samplesPerCycle = static_cast<int>(SAMPLE_RATE / frequency);
+    int cyclePart {samplePart % samplesPerCycle};
+    double halfCycle {samplesPerCycle / 2.0};
+    double amp {MAX_AMP * amplitude};
+
+    double result {amp * ((cyclePart - halfCycle) / halfCycle)};
+    
+    return static_cast<short>(result);
+}
+```
+
+For the next change, I optimized the control flow in the main program loop. Since it is more often that keys are not pressed, I put the `when key is not pressed` conditional statements before the `when key is pressed` statements, which were contained in an `else if`. Therefore, the program would only check both statements for a given key if it was in fact pressed.
+
+Finally, I reorganized everything into a header and source file, renaming the namespace to `wf` for WaveForm. I put in a lot of work today, and the results were worth it! Very satisfying indeed.
