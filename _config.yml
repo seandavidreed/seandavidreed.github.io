@@ -28,7 +28,7 @@ permalink: pretty
 
 # local
 url: "https://seandavidreed.com" # 
-# baseurl: "h" # 
+baseurl: "/" # 
 
 
 markdown: kramdown
