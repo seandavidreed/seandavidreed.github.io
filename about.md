@@ -3,7 +3,7 @@ layout: static
 title: About
 ---
 
-Hello! I'm an instructor at Cappella Music Academy, teaching guitar, bass, and ukulele one-on-one to over 50 students on a weekly basis. June of 2023 marks four wonderful years of teaching. For me, these are the two greatest rewards of teaching, seeing the spark of excitement on a student's face when they grasp concepts, and the opportunity to become a much better learner myself.
+Hello! I'm a music instructor, teaching guitar, bass, and ukulele one-on-one to over 50 students on a weekly basis. June of 2023 marks four wonderful years of teaching. For me, these are the two greatest rewards of teaching, seeing the spark of excitement on a student's face when they grasp concepts, and the opportunity to become a much better learner myself.
 
 When I'm not teaching, I'm learning Computer Science. I've been studying since September of 2021 with the aim of creating new employment opportunities for myself in the future, and in the process, I've become enamored with programming and building my own applications.
 
