@@ -3,4 +3,4 @@ layout: static
 title: Projects
 ---
 
-Temporary text
+[Student Log](https://github.com/seandavidreed/student-log)
