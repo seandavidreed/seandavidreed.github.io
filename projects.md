@@ -3,4 +3,4 @@ layout: static
 title: Projects
 ---
 
-[Student Log](https://github.com/seandavidreed/student-log)
+<a href="https://github.com/seandavidreed/student-log" target="_blank">Student Log</a>
