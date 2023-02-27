@@ -103,3 +103,6 @@ short SawToothWave(int samplePart, double frequency, double amplitude) {
 For the next change, I optimized the control flow in the main program loop. Since it is more often that keys are not pressed, I put the `when key is not pressed` conditional statements before the `when key is pressed` statements, which were contained in an `else if`. Therefore, the program would only check both statements for a given key if it was in fact pressed.
 
 Finally, I reorganized everything into a header and source file, renaming the namespace to `wf` for WaveForm. I put in a lot of work today, and the results were worth it! Very satisfying indeed.
+
+### 2/27/2023
+Goal: to create a class for different tuning temperaments. In this class, I included my original `justIntonation` function and a new `equalTemperament` function. To accomplish this, I needed to learn how to declare a class in a header file and define the class in the related source file. I found [this resource](https://www.cppforschool.com/tutorial/separate-header-and-implementation-files.html) helpful. I went ahead and replaced the previous sfmlPractice1 file with the latest one.

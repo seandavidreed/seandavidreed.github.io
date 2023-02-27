@@ -1,10 +1,45 @@
 #include <math.h>
+#include <vector>
 #include "waveform.h"
 
 namespace wf {
     const double SAMPLE_RATE {44100.f};
     const double TWOPI {6.283185307f};
     const short MAX_AMP {32767};
+    const double EQUAL_T {1.05946f};
+
+    void Scale::justIntonation(const double tonic) {
+        double ji[] = {
+            tonic, 
+            tonic * (9.0/8), 
+            tonic * (5.0/4), 
+            tonic * (4.0/3),
+            tonic * (3.0/2), 
+            tonic * (5.0/3), 
+            tonic * (15.0/8), 
+            tonic * 2
+        };
+        for (double x : ji) {
+            scale.push_back(x);
+        }
+    }
+
+    void Scale::equalTemperament(const double tonic) {
+        const double et[8] = {
+            1.0,
+            pow(EQUAL_T, 2),
+            pow(EQUAL_T, 4),
+            pow(EQUAL_T, 5),
+            pow(EQUAL_T, 7),
+            pow(EQUAL_T, 9),
+            pow(EQUAL_T, 11),
+            2.0
+        };
+
+        for (double x : et) {
+            scale.push_back(tonic * x);
+        }
+    }
 
     short SineWave(int samplePart, double frequency, double amplitude) {
         double samplesPerCycle {SAMPLE_RATE / frequency};

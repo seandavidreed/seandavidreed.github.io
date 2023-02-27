@@ -1,28 +1,14 @@
 #include <iostream>
+#include <vector>
 #include <SFML/Audio.hpp>
 #include <SFML/Graphics.hpp>
 #include <SFML/Window/Keyboard.hpp>
 #include "waveform.h"
 
-// Can be modified freely
-constexpr double tonic = 220.0F;
-
-/*  
- * Major scale tempered with Just Intonation
- * !! CAREFUL EDITING THIS ONE !! 
-*/
-constexpr double scale[8] = {
-    tonic, 
-    tonic * (9.0/8), 
-    tonic * (5.0/4), 
-    tonic * (4.0/3),
-    tonic * (3.0/2), 
-    tonic * (5.0/3), 
-    tonic * (15.0/8), 
-    tonic * 2
-};
-
 int main() {
+    // Can be modified freely
+    wf::Scale scale;
+    scale.justIntonation(220.0f);
 
     // Select the waveform with which to generate samples
     std::cout << "Choose a Waveform: " << std::endl;
@@ -62,7 +48,7 @@ int main() {
         sampleCoords[i].resize(wf::SAMPLE_RATE);
         sampleCoords[i].setPrimitiveType(sf::LineStrip);
         for (int samplePart = 0; samplePart < wf::SAMPLE_RATE; samplePart++) {
-            samples[i][samplePart] = funcPtr(samplePart, scale[i], 0.8);
+            samples[i][samplePart] = funcPtr(samplePart, scale.scale[i], 0.8);
             sampleCoords[i][samplePart].position = sf::Vector2f(samplePart, (samples[i][samplePart] / 400) + 400);
         }
     }
