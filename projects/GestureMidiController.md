@@ -106,3 +106,12 @@ Finally, I reorganized everything into a header and source file, renaming the na
 
 ### 2/27/2023
 Goal: to create a class for different tuning temperaments. In this class, I included my original `justIntonation` function and a new `equalTemperament` function. To accomplish this, I needed to learn how to declare a class in a header file and define the class in the related source file. I found [this resource](https://www.cppforschool.com/tutorial/separate-header-and-implementation-files.html) helpful. I went ahead and replaced the previous sfmlPractice1 file with the latest one.
+
+Scoured [adafruit.com](https://www.adafruit.com/) this evening in search of the parts I'll need to build my gesture-responsive midi controller. Here's my current list:
+
+- [Adafruit Feather nRF52840 Express](https://www.adafruit.com/product/4062)
+- [Long Flex Sensors](https://www.adafruit.com/product/182)
+- [Adafruit LSM6DSOX 6 DoF Accelerometer and Gyroscope](https://www.adafruit.com/product/4438)
+- [Lithium Ion Polymer Battery 3.7v 400mAh](https://www.adafruit.com/product/3898)
+
+I'm uncertain about the accelerometer - it might have more features and peripherals than I need.
