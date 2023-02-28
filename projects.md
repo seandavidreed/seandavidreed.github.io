@@ -14,4 +14,7 @@ Before I developed Student Log, I was using a spreadsheet to keep track of all m
 
 ### <a href="https://scratch.mit.edu/projects/767557935/" target="_blank">Bomb Squad</a>
 This scratch project was the first program I ever wrote. I completed it for Week One of Harvard's EdX course, CS50x, in December 2021. I greatly enjoyed using the Scratch interface, and I would love to build another Scratch game in the future.
-<iframe src="https://scratch.mit.edu/projects/767557935/embed" allowtransparency="true" width="485" height="402" frameborder="0" scrolling="no" allowfullscreen></iframe>
+
+<div style="text-align: center;">
+    <iframe src="https://scratch.mit.edu/projects/767557935/embed" allowtransparency="true" width="485" height="402" frameborder="0" scrolling="no" allowfullscreen></iframe>
+</div>
