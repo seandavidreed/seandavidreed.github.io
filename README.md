@@ -9,6 +9,7 @@ organized in the process.
 ### Courses
 - [x] CS50x - _Harvard edX_ 12/16/2022
 - [x] C Programming: Become A Pro! Think Like A Programmer! - _Udemy_ 12/30/2022
+- [ ] CS50AI - _Harvard edX_
 - [ ] The C++20 Masterclass: From Fundamentals to Advanced  
 - [ ] Mastering Data Structures & Algorithms Using C and C++ - _Udemy_
 
@@ -16,17 +17,20 @@ organized in the process.
 - [ ] Code: The Hidden Language of Computer Hardware and Software by Charles Petzold
 - [ ] The Art of Clean Code by Christian Mayer
 - [ ] The Missing Readme by Dmitriy Ryaboy
-- [ ] Bare Metal C by Steve Oualline
+- [x] Bare Metal C by Steve Oualline 3/24/2023
 
 ### Skills & Experience
 - C/C++
 - Python
 - Django
+- Railway
 - HTML/CSS 
 - SQLite
+- PostgreSQL
 - Git
 - Linux
 
 ### Interests
+- Artificial Intelligence
 - Embedded Systems
-- WebAssembly
+- Rust Web Development
