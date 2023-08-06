@@ -26,10 +26,14 @@ organized in the process.
 - PostgreSQL
 
 ### Libraries
--  
+- NumPy
+- TensorFlow
+- tkinter
+- SFML (Simple Fast Multimedia Library) 
 
 ### Frameworks 
 - Django
+- Flask
 - Bootstrap
 
 ### Tools 
