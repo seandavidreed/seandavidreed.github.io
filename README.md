@@ -9,7 +9,7 @@ organized in the process.
 ### Courses
 - [x] CS50x - _Harvard edX_ 12/16/2022
 - [x] C Programming: Become A Pro! Think Like A Programmer! - _Udemy_ 12/30/2022
-- [ ] CS50AI - _Harvard edX_
+- [x] CS50AI - _Harvard edX_ 8/23/2023
 
 ### Books
 - [ ] Code: The Hidden Language of Computer Hardware and Software by Charles Petzold
@@ -27,7 +27,7 @@ organized in the process.
 
 ### Libraries
 - NumPy
-- TensorFlow
+- PyTorch
 - tkinter
 - SFML (Simple Fast Multimedia Library) 
 
