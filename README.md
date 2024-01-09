@@ -10,12 +10,14 @@ organized in the process.
 - [x] CS50x - _Harvard edX_ 12/16/2022
 - [x] C Programming: Become A Pro! Think Like A Programmer! - _Udemy_ 12/30/2022
 - [x] CS50AI - _Harvard edX_ 8/23/2023
+- [x] Accelerated Computer Science Fundamentals Specialization - _Coursera_  10/7/2023   
 
 ### Books
 - [ ] Code: The Hidden Language of Computer Hardware and Software by Charles Petzold
 - [ ] The Art of Clean Code by Christian Mayer
 - [ ] The Missing Readme by Dmitriy Ryaboy
 - [x] Bare Metal C by Steve Oualline 3/24/2023
+- [x] Artificial Intelligence: A Guide for Thinking Humans - Melanie Mitchell 12/31/2023  
 
 ### Languages
 - C/C++
