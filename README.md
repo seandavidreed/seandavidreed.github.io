@@ -11,7 +11,7 @@ organized in the process.
 - [x] C Programming: Become A Pro! Think Like A Programmer! - _Udemy_ 12/30/2022
 - [x] CS50AI - _Harvard edX_ 8/23/2023
 - [x] Accelerated Computer Science Fundamentals Specialization - _Coursera_  10/7/2023  
-- [ ] Learning How to Learn: Powerful mental tools to help you master tough subjects - _Coursera_   
+- [x] Learning How to Learn: Powerful mental tools to help you master tough subjects - _Coursera_ - 3/18/2024   
 - [ ] Foundations of Data Structures and Algorithms CU Boulder - _Coursera_  
 
 ### Books
@@ -20,13 +20,14 @@ organized in the process.
 - [ ] The Missing Readme by Dmitriy Ryaboy
 - [x] Bare Metal C by Steve Oualline 3/24/2023
 - [x] Artificial Intelligence: A Guide for Thinking Humans - Melanie Mitchell 12/31/2023  
+- [x] A Mind for Numbers - Barbara Oakley, Ph.D. 3/20/2024  
 - [ ] The Alignment Problem - Brian Christian  
 
 ### Languages
 - C/C++
 - Python
 - JavaScript
-- HTML5/CSS3
+- HTML5/CSS3/Sass
 - SQLite3
 - PostgreSQL
 
