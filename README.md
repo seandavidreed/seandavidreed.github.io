@@ -12,7 +12,7 @@ organized in the process.
 - [x] CS50AI - _Harvard edX_ 8/23/2023
 - [x] Accelerated Computer Science Fundamentals Specialization - _Coursera_  10/7/2023  
 - [x] Learning How to Learn: Powerful mental tools to help you master tough subjects - _Coursera_ - 3/18/2024   
-- [ ] Foundations of Data Structures and Algorithms CU Boulder - _Coursera_  
+- [x] CU Boulder Algorithms for Searching, Sorting, and Indexing - _Coursera_ - 2/28/2024  
 
 ### Books
 - [ ] Code: The Hidden Language of Computer Hardware and Software by Charles Petzold
