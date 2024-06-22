@@ -25,17 +25,14 @@ organized in the process.
 
 ### Languages
 - C/C++
+- Rust
 - Python
 - JavaScript
 - HTML5/CSS3/Sass
-- SQLite3
-- PostgreSQL
 
-### Libraries
-- NumPy
-- PyTorch
-- tkinter
-- SFML (Simple Fast Multimedia Library) 
+### Databases
+- Postgres
+- SQLite
 
 ### Frameworks 
 - Django
@@ -43,7 +40,7 @@ organized in the process.
 - Bootstrap
 - React Native
 
-### Tools 
+### Version Control 
 - Git
 
 ### Operating Systems 
@@ -51,6 +48,6 @@ organized in the process.
 - Windows
 
 ### Interests
-- Mobile Development
-- Machine Learning
 - Embedded Systems
+- Machine Learning
+- Web Development
