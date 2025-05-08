@@ -16,10 +16,11 @@ body {
 	overflow: scroll;
 	
 	.main {
-		background-color: #95b8d1;
+		/* background-color: #95b8d1; */
 		justify-content: center;
 		font-family: "Lucida Sans Typewriter", "Lucida Console", monaco, "Bitstream Vera Sans Mono", monospace; 
 		font-size: 14pt;
+		line-height: 1.8;
 		overflow: scroll;
 		
 		@media (min-width: $bp-smallphone) {
