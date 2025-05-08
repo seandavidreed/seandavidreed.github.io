@@ -19,6 +19,7 @@ body {
 		justify-content: center;
 		font-family: "Lucida Sans Typewriter", "Lucida Console", monaco, "Bitstream Vera Sans Mono", monospace; 
 		font-size: 14pt;
+		overflow: hidden;
 		
 		@media (min-width: $bp-smallphone) {
 			padding: 20px;
@@ -28,7 +29,7 @@ body {
 		@media (min-width: $bp-phone) {
 			
 			padding: 20px;
-			width: auto;
+			width: 100%;
 		}
 
 		@media (min-width: $bp-tablet) {
@@ -53,6 +54,7 @@ body {
 		background-color: black;
 		color: white;
 		text-wrap: wrap;
+		overflow: scroll;
 	}
 
 	// Formatting for equation blocks
