@@ -20,7 +20,7 @@ body {
 		justify-content: center;
 		font-family: "Lucida Sans Typewriter", "Lucida Console", monaco, "Bitstream Vera Sans Mono", monospace; 
 		font-size: 14pt;
-		/* overflow: hidden; */
+		overflow: scroll;
 		
 		@media (min-width: $bp-smallphone) {
 			padding: 20px;
