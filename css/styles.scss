@@ -21,12 +21,13 @@ body {
 		font-size: 14pt;
 		
 		@media (min-width: $bp-smallphone) {
-			padding: 10px;
+			padding: 20px;
 			width: 100%;
 		}
 
 		@media (min-width: $bp-phone) {
-			padding: 10px;
+			
+			padding: 20px;
 			width: 100%;
 		}
 
