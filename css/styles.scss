@@ -10,7 +10,9 @@ $bp-largeputer: 1200px;
 body {
 	/* UNIVERSAL LAYOUT SETTINGS */
 	display: flex;
-	justify-content: center;
+	flex-direction: column;
+	//justify-content: center;
+	align-items: center;
 	padding: 0px;
 	margin: 0px;
 	min-height: 100vh;
@@ -23,6 +25,15 @@ body {
 		     "monospace"; 
 	font-size: 14pt;
 	line-height: 1.8;
+	
+	/* UNIVERSAL NAV SETTINGS */
+	nav {
+		background-color: black;
+		position: fixed;
+		a {
+			color: white;
+		}
+	}
 	
 	/* UNIVERSAL ANCHOR SETTINGS */	
 	a {
