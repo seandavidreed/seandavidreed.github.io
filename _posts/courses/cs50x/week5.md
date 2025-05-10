@@ -1,0 +1,55 @@
+# 2/8/2022
+45 minutes of Lecture 5 (I’m noticing that I understand the nomenclature much better! Sololearn has really helped.)
+
+Used Valgrind on my wday.c program and found that I had a memory leak! I fixed it by freeing memory I’d forgotten about. I bet this was what caused my computer to freeze up!
+
+---
+
+# 2/9/2022
+Finished Week 5 Lecture
+
+---
+
+# 2/18/2022
+Watched short on Singly-Linked Lists.
+
+My Projects: tried to gain deeper understanding of File Handling with some success. I need to dig deeper here for a bit. I want to make a cryptographic program that open a txt file and scrambles it according to an algorithm. Played around with file handling some more and I am having more success! I was able to open a file and duplicate it with my program. What’s more, I dynamically allocated memory with the following:
+ 
+```
+Buffer = malloc(sizeof(inFile));
+```
+
+WOW: this is an event! I thought of making this program (texthash.c) a while back and I finally did it! It works perfectly. You open a .txt file with the program and give it a 26 character cipher and it produces a new, encrypted .txt file!
+
+BREAK: I’ve continued to practice here and there, but the moving process has taken up a lot of my time!
+
+---
+
+# 2/25/2022
+Finished up Week 5 Shorts.
+
+---
+
+# 2/28/2022
+Finished Week 5 Lab - Inheritance.
+
+---
+
+# 3/1/2022
+Read through the pset5 Speller guide carefully. I still need to watch the walkthrough videos.
+
+---
+
+# 3/15/2022
+Problem Set 5 Speller
+
+---
+
+# 4/5/2022
+Am I back in the saddle? It feels better to code! Pset5 Speller - worked a little on the hash function!
+
+---
+
+#7/7/2022
+Wk 5 Speller - Wow. I came to this problem with much more confidence. It still took some work, but I got it to run! I can finally proceed to week 6!
+

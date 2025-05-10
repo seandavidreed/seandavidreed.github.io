@@ -1,0 +1,68 @@
+# 8/30/2022
+Week 8 Lecture - I watched the first hour and a half, which was on HTML (Hypertext Markup Language). The last hour is on CSS (Cascading Style Sheet) and I think I’ll complete it tomorrow. 1:25:43
+
+---
+
+# 8/31/2022
+Finished lecture 8! After week 8, I have two more weeks and then the final project. From here on, I need to focus on this course and make sure I complete everything before the end of the year. I also watched two of the short videos, internet primer, IP, and TCP.
+
+Terms to learn: statically-typed, kernels, type-safe, thread-safe. I found a fantastic YouTube channel called Fireship that has short videos overviewing key terms and programming languages etc. They’re rather amusing to boot. Statically-typed means you must specify the data types of your variables (C is statically typed). 
+
+“The kernel is a computer program at the core of a computer's operating system and generally has complete control over everything in the system. It is the portion of the operating system code that is always resident in memory and facilitates interactions between hardware and software components.” Retrieved from [Wikipedia](https://en.m.wikipedia.org/wiki/Kernel_(operating_system))
+
+[Programming Security and Why Rust](https://developer.okta.com/blog/2022/03/18/programming-security-and-why-rust)
+
+---
+
+## 9/1/2022
+Watched week 8 shorts HTTP, HTML, CSS. I played around with my own html and css files, and I’ll probably do more of this! I found it pretty easy and fun.
+
+---
+
+# 9/2/2022
+Watched the week 8 short on JavaScript. It’s taking a while to get through these shorts!
+
+---
+
+# 9/3/2022
+Finished all the short videos; completed Lab 8; and now I’m planning for the main week 8 project, homepage. Update: made great progress on my web page. I planned out my four pages, made a functioning navigation bar, and took the first steps of adding pictures in!
+
+---
+
+# 9/4/2022
+It took way too much effort just to figure out how to align my links on my navigation bar. I am, however, enjoying this process for the most part. Update: discovered flexbox, a CSS organization feature that is making my life easier. I also implemented a carousel for my homepage using Bootstrap, and I quite like it! I will have to go back through this project and make it responsive to different screen sizes - that will be another challenge.
+
+---
+
+# 9/5/2022
+I’m thinking of changing my layout from flexbox to grid. I JUST want something that will allow me to create a simple webpage - it doesn’t need to be fancy.
+
+---
+
+# 9/6/2022
+Finally feeling like I’m making progress; I don’t have to undo everything I’ve done! I need to make my page responsive and add some JavaScript code to satisfy the project requirements.
+
+---
+
+# 9/7/2022
+Made several improvements to my page. I was able to make it responsive using @media (I did something that might be unconventional - I nested an @media in another @media statement in order to make incremental changes to the page as a browser window size is reduced. TODO: fill interests page with content (use JavaScript to make a tabs menu for my various interests: hiking/camping, programming, reading, traveling).
+
+---
+
+# 9/8/2022
+Worked on the interests page; mainly, I added some blurbs to my accordion tabs.
+
+---
+
+# 9/9/2022
+Got the JavaScript to work for my interests page - I’m so close to being done with this project! I just have to polish everything up, and then verify that I’ve satisfied all the project requirements. TODO: write the blurb for the travel tab on my interests page; play with the responsiveness of the interests tab; verify that I have satisfied all the requirements of the project.
+
+---
+
+# 9/10/2022
+Got my interests page to be fully responsive! Changed the webpage background-color to off white - I like it much better. I wrote the travel blurb, gave everything a once over, and found that everything is ready to go! I submitted the homepage assignment! On to week 9.
+
+Played around with HTML, CSS, and JavaScript in my own project folder, and I found that I have a much better understanding now. I can use flexbox pretty well by nesting flex columns within flex rows: ultimately, a grid of responsive flexboxes is created and I have a high degree of control over quantity, placement, color, et cetera. I’m starting to like this stuff more!
+
+
+---

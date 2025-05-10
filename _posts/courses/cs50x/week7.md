@@ -1,0 +1,17 @@
+# 7/31/2022
+Watched over half of Lecture 7, which Is on SQL and Relational Databases. I’m excited for the possibilities here: I bet I could improve my studentlog dramatically using SQL.
+
+---
+
+## 8/2/2022
+Finished Week 7 lecture. Watched week 7 short. Completed Lab 7.
+
+---
+
+## 8/3/2022
+Completed Movies of pset7! I rather proud of this one because I felt a strong sense of understanding throughout the project.
+
+---
+
+# 8/4/2022
+I’m euphoric! I solved Fiftyville and had a blast doing it. Thinking through the logic and seeing my queries access the appropriate data was a thrill - no joke. Some of the most fun I’ve had in this course so far! Done with Week 7; on to Week 8!

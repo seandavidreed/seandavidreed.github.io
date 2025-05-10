@@ -1,0 +1,35 @@
+# 1/16/2022
+Wk4, finished watching shorts. Completed Lab 4 volume.c (I have to say I’m currently frustrated with this course - it's progressing too fast for me. I stopped keeping up around week 3. Maybe this is just a part of the process. I had to use the “not sure how to solve” option on volume.c)
+
+---
+
+# 1/22/2022
+Wk4 after a hiatus, I return! And with a vengeance. I ripped through several of the problems in the “filter” problem set, and I feel fantastic about it.
+
+---
+
+# 1/23/2022
+Wk4 worked on the filter problem set some more!
+
+---
+
+# 1/24/2022
+Wrote a simple program that reverses an array, so I could see what I’m doing wrong with the “blur” filter. The problem was I had been conflating the number of elements of an array with its indices. Since arrays are zero-indexed, the last index of an array will always be the number of elements minus one:
+ 
+```
+/*
+23, the 1st element is at array[0], and 5, the fifth element is at array[4]
+*/
+
+Int array[] = {23, 12, 76, 20, 42};
+```
+
+---
+
+# 1/26/2022
+Succeeded in compiling my code for the Recover pset, but when I run it, I get “Segmentation Fault (core dumped)”. However, I’m happy with my progress. Time to debug!
+
+---
+
+# 1/27/2022
+Wk4 finished recover.c!! Definitely perused Discord for some help, but I did do nearly all the heavy lifting myself. On to week 5!

@@ -1,0 +1,78 @@
+# 9/14/2022
+Week 9 Lecture (Flask). This week is about Flask, a framework for developing websites and web apps. I watched half of the lecture today (1:16:00). I’m intrigued by the possibilities Flask offers! As usual, CS50x lectures inundate you with information, but they are good primers. The short videos and the lab really help to let the information sink in.
+My Website: made some changes to the layout: now I have flex rows contained in a flex column wrapper - this seems to work better for sizing of elements such as the footer, which needs to adhere to the bottom of the page. I also added a photo that can be clicked like a button and which fades to 50% opacity when hovered over.
+
+---
+
+# 9/16/2022
+Watched a little more of Lecture 9. This one is taking me longer to get through. I’m certainly interested in the Flask framework, but I feel a little overwhelmed with all the different learning processes I have going on at once! The lecture is also very fast-paced. I know the short videos will help clarify things further.
+
+---
+
+# 9/21/2022
+Woohoo! Finished Lab 9. Now I’m on to Problem Set 9, which I think will certainly present me with a challenge.
+
+---
+
+# 9/22/2022
+Watched the walkthrough video of Finance to the time stamp 11:52. I created the register.html template according to the pattern of login.html, and I wrote the function in app.py for register. Returning to this function a few hours later, I was able to get it fully working! Woohoo! Later this evening, I completed the quote function, and I had to debug the register function. Now both are working smoothly.
+
+---
+
+# 9/23/2022
+Worked on problem set 9 during my breaks at work. I made some progress on the buy function.
+
+---
+
+# 9/24/2022
+Did my best to work on the buy function in problem set 9 during my breaks at work. I didn’t have much more time to code today!
+
+---
+
+# 9/25/2022
+Worked on the index and buy functions. It took some troubleshooting, but I got them to work! Initially, I wasn’t indexing into the lists and dictionaries correctly, but that just comes from my lack of experience with Python syntax. After some research, I solved the problem. Also, I learned how to enforce a relationship between tables in SQLite using a foreign key. I can’t say I fully understand it at this point, but it works. 
+   - Worked a bunch more on this problem set tonight. Went through and commented everything thoroughly; streamlined the orders table in SQLite and found that CS50x disabled the foreign key feature, so I need not bother with it; decided to create an additional table, portfolios, that will keep all the holdings organized by user and when stocks are bought and sold, this table will be operated on only with UPDATE statements.
+   - TODO: I need to format my html so that the data displayed actually looks nice.
+
+---
+
+# 9/26/2022
+Really trying to tackle this problem set! I finished sell() and history(). My portfolios table solution worked well. I had to debug sell() a bunch after completing it; history() was rather easy by contrast! Now I’m on the final feature, which is adding a personal touch. I decided to add buying and selling functionality to the index page so users can more easily place orders. I’m having a rough go of it, but I know I’ll get a breakthrough soon. For now, I need a break! After this, the final step is to make everything look nice.
+
+---
+
+# 9/27/2022
+I caved and decided to copy/paste the code from the buy and sell functions into the index function: I’m done trying to route from one function to another while preserving the variables (a task I think Flask should make easier). I’m so close to getting everything to work; there’s one thing in the buy function I have to fix, and I don’t expect it to be difficult once I’ve read up on the return value of SQLite’s .execute() method. LATER: wow this was SUCH a struggle. I found a stupid error in a couple of my execute statements, specifically for placing buy orders. In my query, the search conditions included “id = ?” when they needed to include “user_id = ?”! I kept missing this tiny detail! All the logic is now complete for this project: I need only beautify it by manipulating the HTML and CSS now.
+
+---
+
+# 9/28/2022
+I’m busting! I just completed the final Problem Set (Week 9) for this course!! Now I have to complete the final project, which I expect will be quite a challenge indeed. I’ve worked so hard at this: what a release it will be when I finish the course!
+
+---
+
+# 10/3/2022
+Watched the FINAL lecture, Week 10 Emoji! I felt some nostalgia while watching this lecture. I’ve been at this course for 8 months or so; I took the long route because I wanted to more thoroughly study the material presented in each week, so I treated each problem set as a stepping off point for deeper study. I owe a lot to this course, and I would certainly take another course offered by EdX in the future!
+
+---
+
+# 10/4/2022
+Watched the seminar on Git. I will definitely benefit from using this command-line tool; already, I have gotten into the habit of copying the directory of a project so that I can make experimental changes, but this is cumbersome and inefficient. While watching this seminar, I put the tool into practice, initializing my studentlog4.0 directory as a repository. Then, I used remote add to connect is to my studentLog repo on GitHub. Finally, I committed and pushed the files to the main branch (after renaming the old studentlog3.0 branch to “deprecated”).
+
+I set about moving more of my programming project files into their own repos on GitHub using Git. I’m only moving those projects that are more sophisticated and stand-alone, not those that were built solely for practicing a technique.
+
+---
+
+# 10/5/2022
+Continuing to practice with Git by working on my personal projects, committing, and pushing them. I improved my parsefile program, and I changed the default branch from master to main for each repo using this tutorial: [Git Rename Master to Main](https://www.git-tower.com/learn/git/faq/git-rename-master-to-main)
+
+Watched the VS Code Local Environment setup video. It was very informative! Several things he implements I had already done on my own; however, he showed how to run VS Code using Windows Subsystem for Linux, which I already installed but wasn’t using in my IDE: I was simply using bash to interface with my Windows directories. Now, that I’m trying WSL, I’m finding issues with my studentlog program - the compiler can’t find some of the necessary header files, and I’ve yet to figure it out!
+
+WTF is this error: “undefined reference to ‘dlopen’”, which is thrown on account of SQLite. That’s not even all the errors.
+
+After almost pulling my hair out, I found the solution: I just needed to link in the dynamic linker -ldl, pthread -lpthread, and math library -lm at the end of the studentlog rule in my Makefile. Ugh, I don’t really get it, but I now know the issue was with the linker, and everything works.
+
+---
+
+# 12/16/2022
+This is the class for which I’ve been doing all this work on Inventory Manager. I submitted the Django app today, and it hasn’t quite hit me yet that I’ve completed the course! I added my free certificate to LinkedIn, but once I get my verified certificate in 30 days, I’ll add that. This was such a great course; by stretching it out over a year, I was able to get more out of each topic. Each module acted as a springboard for further study and application! I will definitely take another one of Harvard’s edX classes in the future.

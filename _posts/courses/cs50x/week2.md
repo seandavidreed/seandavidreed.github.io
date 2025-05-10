@@ -1,0 +1,27 @@
+# 12/28/2021
+
+Week 2, Lecture 2.
+
+---
+
+# 12/29/2021
+
+Week 2, Shorts. Finished all.
+
+---
+
+# 12/30/2021
+
+(Wk2) Finished Lab 2, Scrabble. This is a personal victory. I went into this lab feeling a little clueless; I was tempted to look at the "help solving" section. Instead, I mustered all my powers of memory, deduction, and investigation to figure it out. I got 100% much quicker than I thought I could! Started on substitution.c
+
+---
+
+# 12/31/2021
+
+(Wk4) Worked on substitution.c. Hard work! Really had to linger on this one.
+
+---
+
+## 1/1/2022
+
+(Wk2) Finished substitution.c and consequently week 2!

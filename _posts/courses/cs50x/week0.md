@@ -1,0 +1,47 @@
+# 12/8/2021
+
+Worked on project. Reminded why I'm not a graphic designer. I hate graphic editing programs! I'm just trying to write the code, not spend an hour trying to figure out how to cut a line.
+
+---
+
+# 12/9/2021
+
+Worked on my scratch project for Week 0 and made good progress!
+
+---
+
+# 12/10/2021
+
+Worked through the logic of my scratch game, Bomb Squad. At first, I made a decision tree and found that my initial idea was too complex. I found a simpler solution. I was making it more complicated than it needed to be!
+
+---
+
+# 12/11/2021
+
+Scratch Project
+
+---
+
+# 12/12/2021
+
+Scratch Project (to do: fix victory screen, possibly upgrade wire sprites)
+
+---
+
+# 12/13/2021
+
+Week 0 Scratch Project. Lots of headway. I improved the quality of the sprites. Still unhappy with some of the backdrops. There are a couple bugs to fix.
+
+---
+
+# 12/14/2021
+
+(Week 0) finished Scratch Project! Probably need to check again for bugs. I intend to pay for the course and submit the project tomorrow!
+
+---
+
+# 12/15/2021
+
+I paid for the course so I can receive the certificate, and submitted my scratch project for Week 0! Awaiting a grade.
+
+---

@@ -16,6 +16,15 @@
 			src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-chtml.js">
 		</script>
 	</head>
+	<header>
+		<nav>
+			<a>Hello</a>
+			<a>Hello</a>
+			<a>Hello</a>
+			<a>Hello</a>
+			<a>Hello</a>
+		</nav>
+	</header>
 	<body>
 		<div class="responsive">
 			{{ content }}

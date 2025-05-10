@@ -1,0 +1,39 @@
+## 1/2/2022
+(Wk3) watched half of Lecture 3.
+
+---
+
+## 1/3/2021
+(Wk3) finished Lecture 3. Watched all the shorts. Completed Lab 3 "Sort." Completed first of Problem Set 3, "Plurality."
+
+---
+
+## 1/4/2021
+(Wk3) working on runoff.c. I really think I'm in the deep end here. I'm finding myself frustrated! But I will persist a little bit at a time.
+
+
+---
+
+## 1/5/2022
+(wk3) finished runoff.c! What a relief. I was misunderstanding the usage of a couple key variables. Consulting the discord forum, I figured it out.
+
+---
+
+## 1/7/2022
+(wk3) working on tideman.c. Since I found runoff.c such a challenge, I decided I'd better complete the other project from this pset as well. Feeling pretty good about it so far!
+
+---
+
+## 1/10/2022
+(wk3) I'm not going to finish the Tideman problem. I already completed runoff and I am only required to solve one of the problems.
+
+---
+
+## 1/11/2022
+(wk4) watched most of Lecture 4.
+
+---
+
+## 1/14/2022
+Wk4 shorts, Pointers
+
