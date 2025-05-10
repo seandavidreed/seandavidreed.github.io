@@ -1,6 +1,4 @@
 Gemfile.lock
 _site/
-*.un~
-*.html~
-*.md~
+*~
 .sass-cache/
