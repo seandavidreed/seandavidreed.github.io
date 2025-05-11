@@ -1,3 +1,7 @@
-source              : .
-destination         : ./_site
-layouts_dir         : _layouts
+source: .
+destination: ./_site
+layouts_dir: _layouts
+collections_dir: my_collections
+collections:
+  old_log:
+    output: true

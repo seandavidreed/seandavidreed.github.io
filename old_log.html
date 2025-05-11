@@ -1,0 +1,23 @@
+---
+layout: default
+title: Old Log
+---
+<div class="responsive index" style="text-align: center;">
+	<h1>Parsed</h1>
+	{% assign entries = site.old_log | where: "subject", "CS50x" %}
+	<h2>{{ entries[0].domain }}</h2>
+	<h3>{{ entries[0].subject }}</h3>
+	{% for entry in entries %}
+		<div>
+			<a href="{{ entry.url }}">{{ entry.title }}</a>
+		</div>
+	{% endfor %}
+
+	<h1>Unparsed</h1>
+	<h2><a href="2025.html">2025</a></h2>
+	<h2><a href="2024.html">2024</a></h2>
+	<h2><a href="2023.html">2023</a></h2>
+	<h2><a href="2022.html">2022</a></h2>
+	<h2><a href="2021.html">2021</a></h2>
+</div>
+
