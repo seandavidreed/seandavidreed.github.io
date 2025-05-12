@@ -30,6 +30,7 @@ body {
 	nav {
 		background-color: black;
 		position: fixed;
+		width: 100vw;
 		display: flex;
 		align-items: center;
 		justify-content: center;
@@ -57,15 +58,15 @@ body {
 		height: auto;
 	}
 
-	/* UNIVERSAL RESPONSIVE SETTINGS */	
-	.responsive {
+	/* UNIVERSAL MAIN SETTINGS */	
+	.main {
 		/* COLORS */
 		/* background-color: #95b8d1; */
 
 		/* LAYOUT */
 		justify-content: center;
 		overflow: scroll;
-		border: 2px dashed;
+		border: 5px ridge;
 		border-color: black;
 		
 		/* BREAKPOINTS */
