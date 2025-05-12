@@ -54,7 +54,7 @@ body {
 		
 	/* UNIVERSAL IMAGE SETTINGS */
 	img {
-		width: 80%;
+		width: 100%;
 		height: auto;
 	}
 
@@ -78,22 +78,22 @@ body {
 		@media (min-width: $bp-phone) {
 			
 			padding: 20px;
-			width: 90%;
+			width: 70%;
 		}
 
 		@media (min-width: $bp-tablet) {
 			padding: 20px;
-			width: 60%;
+			width: 50%;
 		}
 
 		@media (min-width: $bp-smallputer) {
 			padding: 20px;
-			width: 50%;
+			width: 40%;
 		}
 
 		@media (min-width: $bp-largeputer) {
 			padding: 20px;
-			width: 50%;
+			width: 40%;
 		}
 	}
 
@@ -116,11 +116,18 @@ body {
 
 	/* LOCAL INDEX PAGE SETTINGS */
 	.index {
-		width: auto;
-		line-height: 1;
-		a {
-			text-decoration: none;
-		}
+		//width: auto;
+		//line-height: 1;
+		//a {
+		//	text-decoration: none;
+		//}
+		text-align: center;
+	}
+
+	/* LOCAL POST SETTINGS */
+	.post {
+		font-family: "Times New Roman", serif;
+		font-size: 14pt;
 	}
 	
 }
