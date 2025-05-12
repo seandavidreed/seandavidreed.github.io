@@ -22,7 +22,9 @@ $$
 
 To reverse this procedure, we use the private key to raise the encrypted value to the power of $d$ and reduce the result modulo $n$.
 
+$$
 E^d \bmod{n} = M 
+$$
 
 This is the basis of what’s happening in the RSA algorithm, but the fact that we have found functions that can undo each other using different inputs is the bit of mathematical wizardry that needs explaining. We need to know how to get our numbers $e,\ d,\ n$ such that these two simple calculations work.
 
