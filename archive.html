@@ -2,7 +2,7 @@
 layout: default
 title: Archive
 ---
-<div class="responsive index" style="text-align: center;">
+<div style="text-align: center;">
 	<h1>Parsed</h1>
 	{% assign entries = site.old_log | where: "subject", "CS50x" %}
 	<h2>{{ entries[0].domain }}</h2>

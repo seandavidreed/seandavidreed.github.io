@@ -10,9 +10,9 @@ $bp-largeputer: 1200px;
 body {
 	/* UNIVERSAL LAYOUT SETTINGS */
 	display: flex;
-	flex-direction: column;
-	//justify-content: center;
-	align-items: center;
+	//flex-direction: column;
+	justify-content: center;
+	//align-items: center;
 	padding: 0px;
 	margin: 0px;
 	min-height: 100vh;
@@ -35,12 +35,14 @@ body {
 		justify-content: center;
 		column-gap: 5px;
 		height: 50px;
+
 		a {
 			border: 2px solid;
 			border-color: white;
 			padding: 2px 5px;
 			color: white;
 			text-decoration: none;
+			font-size: 11pt;
 		}
 	}
 	
@@ -63,6 +65,8 @@ body {
 		/* LAYOUT */
 		justify-content: center;
 		overflow: scroll;
+		border: 2px dashed;
+		border-color: black;
 		
 		/* BREAKPOINTS */
 		@media (min-width: $bp-smallphone) {
