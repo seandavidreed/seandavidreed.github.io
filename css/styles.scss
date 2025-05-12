@@ -68,6 +68,7 @@ body {
 		overflow: scroll;
 		border: 5px ridge;
 		border-color: black;
+		margin: 50px 0px 0px;
 		
 		/* BREAKPOINTS */
 		@media (min-width: $bp-smallphone) {
