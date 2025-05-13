@@ -15,33 +15,24 @@
 		<script id="MathJax-script" async
 			src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-chtml.js">
 		</script>
-		<script id="toggle-dark-mode">
-			function toggleDarkMode() {
-				const body = document.getElementById("global");
-				const main = document.getElementById("center"); 
-				const links = document.getElementsByTagName("a");
-
-				body.style.background = "black";
-				
-				main.style.background = "black";
-				main.style.color = "white";
-
-				for (let i = 0; i < links.length; i++) {
-					links[i].color = "white";
-				}
-			}
+		<script src="https://cdn.jsdelivr.net/npm/darkmode-js@1.5.7/lib/darkmode-js.min.js"></script>
+		<script>
+  			function addDarkmodeWidget() {
+			    new Darkmode().showWidget();
+  			}
+  			window.addEventListener('load', addDarkmodeWidget);
 		</script>
+
 	</head>
-	<body id="global">
+	<body>
 		<nav>
 				<a href="/index.html">Home</a>
 				<a href="/about.html">About</a>
 				<a href="/blog.html">Blog</a>
 				<a href="https://github.com/seandavidreed">GitHub</a>
 				<a href="/archive.html">Archive</a>
-				<input type="checkbox" onclick="toggleDarkMode()">
 		</nav>
-		<div id="center" class="main">
+		<div class="main">
 			{{ content }}
 		</div>
 	</body>
