@@ -18,33 +18,15 @@
 		<script src="https://cdn.jsdelivr.net/npm/darkmode-js@1.5.7/lib/darkmode-js.min.js"></script>
 		<script>
   			function addDarkmodeWidget() {
-			    new Darkmode().showWidget();
+				const options = {
+					time: "0.1s"
+				}
+			    	new Darkmode(options).showWidget();
   			}
   			window.addEventListener('load', addDarkmodeWidget);
 		</script>
-		<script>
-			function mathJaxDarkMode(body) {
-				console.log(this);
-				const mathJaxElems = document.getElementsByClassName("MathJax");
-				var color = "";
-				if (body.classList.contains("darkmode--activated")) {
-					color = "white";
-					console.log(color);
-				}
-				else {
-					color = "black";
-					console.log(color);
-				}
-				
-				for (let i = 0; i < mathJaxElems.length; i++) {
-					mathJaxElems[i].style.color = color;
-
-				}	
-			}
-		</script>	
-
 	</head>
-	<body id="1" onclick="mathJaxDarkMode(this)">
+	<body>
 		<nav>
 				<a href="/index.html">Home</a>
 				<a href="/about.html">About</a>

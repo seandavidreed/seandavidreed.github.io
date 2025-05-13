@@ -7,6 +7,7 @@ $bp-tablet: 768px;
 $bp-smallputer: 992px;
 $bp-largeputer: 1200px;
 
+
 body {
 	/* UNIVERSAL LAYOUT SETTINGS */
 	display: flex;
@@ -133,4 +134,10 @@ body {
 	
 }
 
+/* MODIFY DARKMODE TO INCLUDE MATHJAX */
+.darkmode--activated {
+	.MathJax {
+		color: white;
+	}
+}
 
