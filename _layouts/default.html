@@ -22,9 +22,29 @@
   			}
   			window.addEventListener('load', addDarkmodeWidget);
 		</script>
+		<script>
+			function mathJaxDarkMode(body) {
+				console.log(this);
+				const mathJaxElems = document.getElementsByClassName("MathJax");
+				var color = "";
+				if (body.classList.contains("darkmode--activated")) {
+					color = "white";
+					console.log(color);
+				}
+				else {
+					color = "black";
+					console.log(color);
+				}
+				
+				for (let i = 0; i < mathJaxElems.length; i++) {
+					mathJaxElems[i].style.color = color;
+
+				}	
+			}
+		</script>	
 
 	</head>
-	<body>
+	<body id="1" onclick="mathJaxDarkMode(this)">
 		<nav>
 				<a href="/index.html">Home</a>
 				<a href="/about.html">About</a>
