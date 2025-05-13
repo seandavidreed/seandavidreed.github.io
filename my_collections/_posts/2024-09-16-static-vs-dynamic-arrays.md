@@ -15,6 +15,8 @@ let arr: [5, i32] = [1, 2, 33, 4, 7];
 
 This declaration allocates 20 contiguous bytes of memory since we have five 32-bit integers and 32 bits is 4 bytes. We should expect our memory to look something like below.
 
+![](/images/2024-09-16-post/drawing.jpg)
+
 Note the memory addresses are in hexadecimal, which is the standard way to represent them. For ease of explanation, I’ll convert them to decimal.
 
 ```
@@ -68,6 +70,8 @@ fn main() {
 
 When I run this in my terminal, I get the following results.
 
+![](/images/2024-09-16-post/terminal1.png)
+
 Plainly, the first 8 digits of the addresses are identical, so we can analyze the final four digits and see if they are indeed 4 bytes apart.
 
 ```
@@ -109,6 +113,9 @@ fn main() {
 ```
 
 In the program output below, note that the addresses of `my_doubled_array` are completely separate from the addresses of `my_array`, just as expected.
+
+![](/images/2024-09-16-post/terminal2.png)
+
 ## Amortized Analysis
 
 Consider the static array for a moment. Appending a new element takes constant time O(1). It always takes only 1 operation to store 1 element. This is also true with dynamic arrays, but we have to consider an additional cost that occasionally occurs. Whenever we have to double the capacity of our array to make room for new elements, we must copy over all the previously stored elements into a new doubled array. This operation will cost O(n), where n is the size of the array that needs to be copied.
@@ -127,39 +134,39 @@ We began with an array of size 5 which was empty, and over the course of the pro
 
 To get to an array of size 640, we repeatedly multiplied by 2, which is the process of exponentiation. To find out how many times we multiplied by 2, we can apply the inverse operation of exponentiation to 640, namely the logarithm.
 
-```
+$$
 \log_2{640} \approx 9.32
-```
+$$
 
 Not only is this number too high, but we need an integer. In our example, our array began at size 5, not 2 which the above calculation assumes. We need to subtract the number of times 2 is doubled to reach 5.
 
-```
+$$
 \log_2{640} - \log_2{5} = 7
-```
+$$
 
 In other words, we performed the resize operation 7 times over the course of appending 640 elements. Recall that the resize operation will cost O(n), where n is the size of the array that needs to be copied. Let’s add up all the operations.
 
-```
+$$
 \underbrace{640}_{appends} + \underbrace{5 + 10 + 20 + 40 + 80 + 160 + 320}_{elements\ copied\ during\ resizes} = 1275
-```
+$$
 
 Note that the total operations is nearly double that of the number of elements (n = 640) appended, so our time complexity is `O(2n)`. However, we want to amortize this cost across the total number of appends.
 
-```
+$$
 \frac{O(2n)}{n} = O(2) = O(1)
-```
+$$
 
 Every append operation has an amortized cost of O(1). Let’s formalize everything we did here.
 
-```
+$$
 \begin{aligned}  &amortized\ cost\ = (n + \displaystyle\sum_{i = 1}^{\log_2{n}} 2^{i-1}) / n \\  &amortized\ cost\ = \frac{O(2n)}{n} \\ &amortized\ cost\ = O(1) \end{aligned} 
-```
+$$
 
 The equation above applies to a more generic example where the arrays sizes are powers of 2. In our case, we start with size 5 and repeatedly double it from there, so our exact implementation looks like this.
 
-```
+$$
 \begin{aligned} &amortized\ cost\ = (n + \displaystyle5 \times \sum_{i = 1}^{\log_2{n}-\log_2{5}} 2^{i-1}) / n \\ &amortized\ cost\ = \frac{O(2n)}{n} \\ &amortized\ cost\ = O(1) \end{aligned} 
-```
+$$
 
 ## Conclusion
 
