@@ -14,9 +14,7 @@ $bp-largeputer: 1200px;
 body {
 	/* UNIVERSAL LAYOUT SETTINGS */
 	display: flex;
-	//flex-direction: column;
 	justify-content: center;
-	//align-items: center;
 	padding: 0px;
 	margin: 0px;
 	min-height: 100vh;
@@ -73,33 +71,6 @@ body {
 		border: 5px ridge;
 		border-color: black;
 		margin: 50px 0px 0px;
-		
-		/* BREAKPOINTS */
-		@media (min-width: $bp-smallphone) {
-			padding: 20px;
-			width: 90%;
-		}
-
-		@media (min-width: $bp-phone) {
-			
-			padding: 20px;
-			width: 70%;
-		}
-
-		@media (min-width: $bp-tablet) {
-			padding: 20px;
-			width: 70%;
-		}
-
-		@media (min-width: $bp-smallputer) {
-			padding: 20px;
-			width: 50%;
-		}
-
-		@media (min-width: $bp-largeputer) {
-			padding: 20px;
-			width: 40%;
-		}
 	}
 
 	/* UNIVERSAL CODE BLOCK SETTINGS */
@@ -138,35 +109,8 @@ body {
 			flex-direction: column;
 			flex-basis: 100%;
 			flex: 1;
-		}
-		
-		/* BREAKPOINTS */
-		@media (min-width: $bp-smallphone) {
-			font-size: 18pt;
-			p {
-				font-size: 14pt;
-			}
-		}
-
-		@media (min-width: $bp-phone) {
-			font-size: 18pt;
-			p {
-				font-size: 14pt;
-			}
-			
-		}
-
-		@media (min-width: $bp-tablet) {
-			font-size: 25pt;
-			p {
-				font-size: 25pt;
-			}
-		}
-
-		@media (min-width: $bp-smallputer) {
-		}
-
-		@media (min-width: $bp-largeputer) {
+			justify-content: center;
+			padding: 0px 10px;
 		}
 	}
 
@@ -176,6 +120,62 @@ body {
 		font-size: 14pt;
 	}
 	
+	/* BREAKPOINTS */
+	@media (min-width: $bp-smallphone) {
+		.main {
+			padding: 20px;
+			width: 90%;
+		}
+		
+		.index {
+			font-size: 18pt;
+			.tagline {
+				font-size: 14pt;
+			}
+		}
+	}
+
+	@media (min-width: $bp-phone) {
+		.main {	
+			padding: 20px;
+			width: 70%;
+		}
+
+		.index {
+			font-size: 18pt;
+			.tagline {
+				font-size: 14pt;
+			}
+		}
+	}
+
+	@media (min-width: $bp-tablet) {
+		.main {
+			padding: 20px;
+			width: 70%;
+		}
+
+		.index {
+			font-size: 25pt;
+			.tagline {
+				font-size: 25pt;
+			}
+		}
+	}
+
+	@media (min-width: $bp-smallputer) {
+		.main {
+			padding: 20px;
+			width: 50%;
+		}
+	}
+
+	@media (min-width: $bp-largeputer) {
+		.main {
+			padding: 20px;
+			width: 40%;
+		}
+	}
 }
 
 /* MODIFY DARKMODE TO INCLUDE MATHJAX */
