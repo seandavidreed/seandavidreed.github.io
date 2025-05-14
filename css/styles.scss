@@ -90,13 +90,8 @@ body {
 		overflow: scroll;
 	}
 
-	/* LOCAL INDEX PAGE SETTINGS */
-	.index {
-		font-family: "Indie Flower", sans-serif;
-		font-size: 25pt;
-		line-height: 0.1pt;
-		column-gap: 0px;
-		
+	/* UNIVERSAL FLEX SETTINGS */
+	.flex {
 		.row {
 			display: flex;
 			flex-direction: row;
@@ -112,7 +107,24 @@ body {
 			justify-content: center;
 			padding: 0px 10px;
 		}
+		
+		/* LOCAL INDEX PAGE SETTINGS */
+		.index {
+			font-family: "Indie Flower", sans-serif;
+			font-size: 25pt;
+			line-height: 0.1pt;
+			column-gap: 0px;
+		}
+
+		.archive {
+			border: 2px solid;
+			border-radius: 10px;
+			margin: 5px;
+			align-items: center;
+			justify-content: center;
+		}
 	}
+
 
 	/* LOCAL POST SETTINGS */
 	.post {
@@ -133,6 +145,10 @@ body {
 				font-size: 14pt;
 			}
 		}
+		
+		.archive-flex .row {
+				flex-direction: column;
+		}
 	}
 
 	@media (min-width: $bp-phone) {
@@ -147,6 +163,9 @@ body {
 				font-size: 14pt;
 			}
 		}
+		.archive-flex .row {
+				flex-direction: column;
+		}
 	}
 
 	@media (min-width: $bp-tablet) {
@@ -160,6 +179,9 @@ body {
 			.tagline {
 				font-size: 25pt;
 			}
+		}
+		.archive-flex .row {
+			flex-direction: row;
 		}
 	}
 
