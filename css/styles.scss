@@ -87,12 +87,12 @@ body {
 
 		@media (min-width: $bp-tablet) {
 			padding: 20px;
-			width: 50%;
+			width: 70%;
 		}
 
 		@media (min-width: $bp-smallputer) {
 			padding: 20px;
-			width: 40%;
+			width: 50%;
 		}
 
 		@media (min-width: $bp-largeputer) {
@@ -137,6 +137,25 @@ body {
 			flex-direction: column;
 			flex-basis: 100%;
 			flex: 1;
+		}
+		
+		/* BREAKPOINTS */
+		@media (min-width: $bp-smallphone) {
+			font-size: 18pt;
+		}
+
+		@media (min-width: $bp-phone) {
+			font-size: 18pt;
+		}
+
+		@media (min-width: $bp-tablet) {
+			font-size: 25pt;
+		}
+
+		@media (min-width: $bp-smallputer) {
+		}
+
+		@media (min-width: $bp-largeputer) {
 		}
 	}
 
