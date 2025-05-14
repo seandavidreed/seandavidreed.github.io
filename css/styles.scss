@@ -7,7 +7,6 @@ $bp-tablet: 768px;
 $bp-smallputer: 992px;
 $bp-largeputer: 1200px;
 
-
 body {
 	/* UNIVERSAL LAYOUT SETTINGS */
 	display: flex;
@@ -122,8 +121,6 @@ body {
 	.index {
 		line-height: 1;
 		text-align: center;
-		font-family: Exile;
-		font-size: 30pt;
 	}
 
 	/* LOCAL POST SETTINGS */

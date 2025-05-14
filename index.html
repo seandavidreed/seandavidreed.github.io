@@ -5,9 +5,10 @@ title: home
 <div class="index">
 	 Sean David Reed
 </div>
-<hr>
 <div>
-	 <h2>Latest Posts</h2>
+	<hr>
+	<h2>Latest Posts</h2>
+	<hr>
 	{% for post in site.posts limit: 10 %}
 		<div><a href="{{ post.url }}">{{ post.title }}</a></div>
 	{% endfor %}
