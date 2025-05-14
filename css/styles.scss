@@ -120,11 +120,24 @@ body {
 
 	/* LOCAL INDEX PAGE SETTINGS */
 	.index {
-		line-height: 1;
-		text-align: center;
-		//font-family: Exile, sans-serif;
 		font-family: "Indie Flower", sans-serif;
 		font-size: 25pt;
+		line-height: 0.1pt;
+		column-gap: 0px;
+		
+		.row {
+			display: flex;
+			flex-direction: row;
+			flex-wrap: wrap;
+			width: 100%;
+		}
+
+		.column {
+			display: flex;
+			flex-direction: column;
+			flex-basis: 100%;
+			flex: 1;
+		}
 	}
 
 	/* LOCAL POST SETTINGS */
