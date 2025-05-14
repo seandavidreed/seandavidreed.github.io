@@ -142,14 +142,24 @@ body {
 		/* BREAKPOINTS */
 		@media (min-width: $bp-smallphone) {
 			font-size: 18pt;
+			p {
+				font-size: 14pt;
+			}
 		}
 
 		@media (min-width: $bp-phone) {
 			font-size: 18pt;
+			p {
+				font-size: 14pt;
+			}
+			
 		}
 
 		@media (min-width: $bp-tablet) {
 			font-size: 25pt;
+			p {
+				font-size: 25pt;
+			}
 		}
 
 		@media (min-width: $bp-smallputer) {
