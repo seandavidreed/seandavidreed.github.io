@@ -7,6 +7,10 @@ $bp-tablet: 768px;
 $bp-smallputer: 992px;
 $bp-largeputer: 1200px;
 
+/* IMPORT SELF-HOSTED FONTS */
+@import url("/fonts/Exile/font-settings.css");
+@import url("/fonts/IndieFlower/font-settings.css");
+
 body {
 	/* UNIVERSAL LAYOUT SETTINGS */
 	display: flex;
@@ -62,9 +66,6 @@ body {
 
 	/* UNIVERSAL MAIN SETTINGS */	
 	.main {
-		/* COLORS */
-		/* background-color: #95b8d1; */
-
 		/* LAYOUT */
 		justify-content: center;
 		overflow: scroll;
@@ -121,6 +122,9 @@ body {
 	.index {
 		line-height: 1;
 		text-align: center;
+		//font-family: Exile, sans-serif;
+		font-family: "Indie Flower", sans-serif;
+		font-size: 25pt;
 	}
 
 	/* LOCAL POST SETTINGS */
