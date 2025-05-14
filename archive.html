@@ -2,22 +2,27 @@
 layout: default
 title: Archive
 ---
-<div>
-	<h1>Parsed</h1>
-	{% assign entries = site.old_log | where: "subject", "CS50x" %}
-	<h2>{{ entries[0].domain }}</h2>
-	<h3>{{ entries[0].subject }}</h3>
-	{% for entry in entries %}
-		<div>
-			<a href="{{ entry.url }}">{{ entry.title }}</a>
-		</div>
-	{% endfor %}
-
-	<h1>Unparsed</h1>
-	<h2><a href="2025.html">2025</a></h2>
-	<h2><a href="2024.html">2024</a></h2>
-	<h2><a href="2023.html">2023</a></h2>
-	<h2><a href="2022.html">2022</a></h2>
-	<h2><a href="2021.html">2021</a></h2>
-</div>
+<h1>Archive</h1>
+<hr>
+<h2>What's Here</h2>
+<p>
+Since I first started programming and building a foundation in Computer Science, I've been keeping a logbook of all the projects built, courses taken, books read, and daily tasks completed. This <i>programming log</i>, as I called it, has since grown into this website, and I plan to continue the spirit of it with blog posts (I may still add to the log itself as well). This archive is all about presenting the logbook in its original form, as with the <i>unparsed</i> section at the bottom of the page, and in a more accessible form, <i>parsed</i>. 
+</p>
+<hr>
+<h2>Parsed</h2>
+{% assign entries = site.old_log | where: "subject", "CS50x" %}
+<h3>{{ entries[0].domain }}</h3>
+<h4>{{ entries[0].subject }}</h4>
+{% for entry in entries %}
+	<div>
+		<a href="{{ entry.url }}">{{ entry.title }}</a>
+	</div>
+{% endfor %}
+<hr>
+<h2>Unparsed</h2>
+<h3><a href="2025.html">2025</a></h3>
+<h3><a href="2024.html">2024</a></h3>
+<h3><a href="2023.html">2023</a></h3>
+<h3><a href="2022.html">2022</a></h3>
+<h3><a href="2021.html">2021</a></h3>
 
