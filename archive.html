@@ -12,20 +12,42 @@ Since I first started programming and building a foundation in Computer Science,
 <h2>Parsed</h2>
 <div class="archive-flex flex">
 	<div class="row">
-		{% assign entries = site.old_log | where: "subject", "CS50x" %}
-		<h3>{{ entries[0].domain }}</h3>
+		<h3>Courses</h3>
 	</div>
 	<div class="row">
 		<div class="archive column">
-			<h4>{{ entries[0].subject }}</h4>
-			{% for entry in entries %}
+			{% assign cs50x = site.old_log | where: "subject", "CS50x" %}
+			<h4>CS50x</h4>
+			{% for entry in cs50x %}
+				<div>
+					<a href="{{ entry.url }}">{{ entry.title }}</a>
+				</div>
+			{% endfor %}
+		</div>
+		<div class="archive column">
+			{% assign sololearn = site.old_log | where: "subject", "Sololearn" %}
+			<h4>Sololearn</h4>
+			{% for entry in sololearn %}
 				<div>
 					<a href="{{ entry.url }}">{{ entry.title }}</a>
 				</div>
 			{% endfor %}
 		</div>
 	</div>
-	<hr>
+	<div class="row">
+		<h3>Projects</h3>
+	</div>
+	<div class="row">
+		<div class="archive column">
+			{% assign studentlog = site.old_log | where: "subject", "Student Log" %}
+			<h4>Student Log</h4>
+			{% for entry in studentlog %}
+				<div>
+					<a href="{{ entry.url }}">{{ entry.title }}</a>
+				</div>
+			{% endfor %}
+		</div>
+	</div>	
 	<div class="row">
 		<h2>Unparsed</h2>
 	</div>
