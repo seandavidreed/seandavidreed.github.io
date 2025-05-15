@@ -17,7 +17,7 @@ Since I first started programming and building a foundation in Computer Science,
 	<div class="row">
 		<div class="archive column">
 			{% assign cs50x = site.old_log | where: "subject", "CS50x" %}
-			<h4>CS50x</h4>
+			<h4 style="margin: 0px">CS50x</h4>
 			{% for entry in cs50x %}
 				<div>
 					<a href="{{ entry.url }}">{{ entry.title }}</a>
@@ -26,7 +26,7 @@ Since I first started programming and building a foundation in Computer Science,
 		</div>
 		<div class="archive column">
 			{% assign sololearn = site.old_log | where: "subject", "Sololearn" %}
-			<h4>Sololearn</h4>
+			<h4 style="margin: 0px">Sololearn</h4>
 			{% for entry in sololearn %}
 				<div>
 					<a href="{{ entry.url }}">{{ entry.title }}</a>
@@ -40,7 +40,7 @@ Since I first started programming and building a foundation in Computer Science,
 	<div class="row">
 		<div class="archive column">
 			{% assign studentlog = site.old_log | where: "subject", "Student Log" %}
-			<h4>Student Log</h4>
+			<h4 style="margin: 0px">Student Log</h4>
 			{% for entry in studentlog %}
 				<div>
 					<a href="{{ entry.url }}">{{ entry.title }}</a>
