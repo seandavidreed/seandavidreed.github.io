@@ -208,8 +208,12 @@ body {
 	}
 	
 	.highlight {
-		background-color: black;
-		color: white;
+		background: #ccc;
+		color: black;
+		pre {
+			background: #ccc;
+			color: black;
+		}
 	}	
 }
 
