@@ -5,12 +5,24 @@
 		<meta name="viewport" content="device-width, initial-scale=1">
 		<title>{{ page.title }}</title>
 		<link href="/css/styles.css" rel="stylesheet">
-		<script src="/javascript/mathjax.js"></script>
+		<script>
+			MathJax = {
+		  		tex: {
+		    			inlineMath: [['$', '$'], ['\\(', '\\)']]
+		  		}
+			};
+		</script>
 		<script id="MathJax-script" async
-			src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-chtml.js">
+		  src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-chtml.js">
 		</script>
 		<script src="https://cdn.jsdelivr.net/npm/darkmode-js@1.5.7/lib/darkmode-js.min.js"></script>
-		<script src="/javascript/darkmode.js">
+		<script>
+			function addDarkmodeWidget() {
+				const options = {
+					time: "0.2s"
+				}
+				new Darkmode(options).showWidget();
+			}
   			window.addEventListener('load', addDarkmodeWidget);
 		</script>
 	</head>
