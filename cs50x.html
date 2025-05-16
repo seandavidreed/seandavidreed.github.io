@@ -4,9 +4,13 @@ title: CS50x
 ---
 
 <h1>CS50x</h1>
+<hr>
 {% assign cs50x = site.old_log | where: "subject", "CS50x" %}
 {% for entry in cs50x %}
     <div>
         <a href="{{ entry.url }}">{{ entry.title }}</a>
     </div>
 {% endfor %}
+<hr>
+<h2>First Project of the Course</h2>
+<iframe src="https://scratch.mit.edu/projects/767557935/embed" allowtransparency="true" width="485" height="402" frameborder="0" scrolling="no" allowfullscreen></iframe>
