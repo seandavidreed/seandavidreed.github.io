@@ -1,11 +1,22 @@
-2025-02-12
+---
+layout: default
+title: Troubleshooting Docker DNS
+date: 2025-02-12
+categories: Docker
+system: Ubuntu
+published: false
+---
 
-OS/Distro: Ubuntu 24.04.1 LTS
+# Troubleshooting Docker DNS
 
-Resources Used:
-[Fix Docker Container DNS Internet Issues](https://confidence.sh/blog/fix-docker-container-dns-internet-issues/)
+---
+ 
+Date: 2025-02-12  
+OS/Distro: Ubuntu 24.04.1 LTS  
+Resources Used:  
+- [Fix Docker Container DNS Internet Issues](https://confidence.sh/blog/fix-docker-container-dns-internet-issues/)  
 
-#### Notes
+## Notes
 1. If fetches are ignored `ign` or errors result when running `docker build -t \<name\> .`, check to see if DNS servers are configured for docker.
 2. Go to `/etc/docker/daemon.json`. Create it if it doesn't exist.
 

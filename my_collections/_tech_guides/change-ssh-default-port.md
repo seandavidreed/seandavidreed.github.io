@@ -2,7 +2,7 @@
 layout: default
 title: Change SSH Default Port
 date: 2025-01-11
-domain: Guides
+categories: Linux
 system: Ubuntu
 ---
 

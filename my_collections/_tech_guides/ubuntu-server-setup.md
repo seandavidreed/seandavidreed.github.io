@@ -1,9 +1,22 @@
-2025-02-24  
+---
+layout: default
+title: Ubuntu Server Setup
+date: 2025-02-24
+categories: Linux
+system: Ubuntu
+published: false
+---
 
-OS/Distro: Ubuntu 24.04.2 LTS (Ubuntu Server)
+# Ubuntu Server Setup
 
+---
+
+Date: 2025-02-24  
+OS/Distro: Ubuntu 24.04.2 LTS (Ubuntu Server)  
 Resources Used:  
-[Connect to Wi-Fi From Command Line](https://linuxconfig.org/ubuntu-20-04-connect-to-wifi-from-command-line)  
+- [Connect to Wi-Fi From Command Line](https://linuxconfig.org/ubuntu-20-04-connect-to-wifi-from-command-line)  
+
+---
 
 1. Install Ubuntu Server from usb media
    - Wifi connection not found

@@ -1,11 +1,23 @@
-<h3 style="color:green;">2025-04-23</h3>
+---
+layout: default
+title: Slackware Package Management
+date: 2025-04-23
+domain: Guides
+system: Slackware
+---
 
-OS/Distro: Slackware 15.0
+# Slackware Package Management
 
-Resources Used: \
-[slackbuilds.org - How to Install Packages](http://slackbuilds.org/howto/)
+---
 
-# Slackware Philosophy
+Date: 2025-04-23  
+OS/Distro: Slackware 15.0  
+Resources Used:  
+- [slackbuilds.org - How to Install Packages](http://slackbuilds.org/howto/)  
+
+---
+
+## Slackware Philosophy
 It's in the name: *Slack*ware. New kernel releases are often years in the making, and this is by design: stability and simplicity are fundamental to Slackware. These attributes are harder to achieve with a rolling release cycle. Having started in 1993, it's the oldest still maintained linux distribution, so they are doing something right!
 
 The Slackware approach to package management is just as odd as the release cycle. Distributions have their dedicated package managers: Debian-based distros have _apt_, Red Hat has _yum_, and Arch has _pacman_, to name a few. 
@@ -23,8 +35,8 @@ Further, all the necessary dependencies will be managed with those commands. Sla
 
 The reasoning goes that every install ought to be completely deliberate. An administrator should always be making a conscious choice about what goes on their machine. I have to say, I do find this philosophy compelling.
 
-# Install Process
-Everything here is outlined in [slackbuilds.org - How to Install Packages](http://slackbuilds.org/howto/), but I'll paraphrase it as well. \
+## Install Process
+Everything here is outlined in [slackbuilds.org - How to Install Packages](http://slackbuilds.org/howto/), but I'll paraphrase it as well.  
 1. Navigate to [slackbuilds.org](http://slackbuilds.org) and search for the package you require.
 2. Select the package. For example, _nginx_.
     ![](images/slackbuild1.png)
@@ -60,8 +72,8 @@ Everything here is outlined in [slackbuilds.org - How to Install Packages](http:
     ```
 10. Done!
 
-# Uninstall Process
-This process is much more straightforward. \
+## Uninstall Process
+This process is much more straightforward.  
 1. In a terminal, launch pkgtool.
     ```
     sudo pkgtool
