@@ -73,7 +73,7 @@ NOTE (2025-04-27): I ended up using makemkv version 1.17.7 since 1.18.1 did not 
     cd /root/.MakeMKV
     vim settings.conf
     ```
-    Add `app_Key = "T-ojN79AT7nFd1NN90alqBt4Piy8I01A1Z42yZeufFiSz2iC3Tai8e9ZgWq8G1sFacmJ"` to the file. The above is my key as of April 2025, it will be different for you.
+    Add `app_key = “<app_key>"` to the file. The key changes every month.
 
 ## Flash ASUS BW-16D1HT with Libredrive
 This part almost made me throw my new optical drive off the balcony. Here's the steps that worked in the end. The most important resources were links 2, 3, and 4. It's not completely clear whether the problem was with the makemkv version (1.18.1) or the authority with which I was executing the commands (logged in as root or not). Executing `makemkvcon` created a **.MakeMKV** directory in my **/home** directory, and `sudo makemkvcon` created one in **/root**. The latter led to a successful rip. Below, you'll find the exact steps I took to make things work. \
