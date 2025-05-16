@@ -5,3 +5,5 @@ collections_dir: my_collections
 collections:
   old_log:
     output: true
+  tech_guides:
+    output: true

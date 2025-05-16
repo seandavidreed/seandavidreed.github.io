@@ -51,12 +51,12 @@ body {
 			font-size: 11pt;
 		}
 
-		a:hover {
+		a:hover:not(.github-button) {
 			color: black;
 			background: white;
 		}
 
-		a:active {
+		a:active:not(.github-button) {
 			color: black;
 			background: white;
 		}
@@ -152,6 +152,11 @@ body {
 	.post {
 		font-family: "Times New Roman", serif;
 		font-size: 14pt;
+	}
+
+	.github-button {
+		border: none;
+		align-items: center;
 	}
 	
 	/* BREAKPOINTS */
