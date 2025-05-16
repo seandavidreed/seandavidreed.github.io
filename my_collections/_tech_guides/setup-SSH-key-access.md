@@ -1,14 +1,25 @@
-2025-01-12
+---
+layout: default
+title: Setup SSH Key Access
+date: 2025-01-12
+domain: Guides
+system: Ubuntu
+published: false
+---
 
-OS/Distro: Ubuntu 24.04.1 LTS
+# Setup SSH Key Access
 
-Resources Used:
+---
+ 
+Date: 2025-01-12  
+OS/Distro: Ubuntu 24.04.1 LTS  
+Resources Used:  
+- [How to Setup Passwordless SSH Login | Linuxize](https://linuxize.com/post/how-to-setup-passwordless-ssh-login/)
+- [Alternative to ssh-copy-id on windows - Super User](https://superuser.com/a/1815968)
 
-[How to Setup Passwordless SSH Login | Linuxize](https://linuxize.com/post/how-to-setup-passwordless-ssh-login/)
+---
 
-[Alternative to ssh-copy-id on windows - Super User](https://superuser.com/a/1815968)
-
-#### Client Side
+## Client Side
 
 1. Check for existing SSH keys. If they exist, try using them instead, or back them up and generate new ones. If keys are overwritten, other SSH connections could be disrupted.
    
@@ -55,7 +66,7 @@ Resources Used:
    C:\> ssh remote_username@server_ip_address
    ```
 
-#### Disable Password Authentication - Server Side
+## Disable Password Authentication - Server Side
 
 Disabling Password Authentication will require any machine that wants to access the server to have the private key. This will provide better security than Username and Password access.
 
@@ -84,5 +95,4 @@ Disabling Password Authentication will require any machine that wants to access 
    - If the above command doesn't work, try the commands in [Change SSH Default Port](/change-ssh-default-port.md) at _Steps 6 and 7_.
 
 8. [Optional] Verify that you cannot SSH into the server by trying to establish a connection from a machine without the private key.
-
 9. Done!

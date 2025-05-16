@@ -1,25 +1,36 @@
-2025-02-02
+---
+layout: default
+title: How to Mount/Unmount an External Storage Device from the Command Line
+date: 2025-02-02
+domain: Guides
+system: Ubuntu
+---
 
-OS/Distro: Ubuntu 24.04.1 LTS
+# How to Mount/Unmount an External Storage Device from the Command Line
 
-Resources Used:
-[What is the command line equivalent of safely remove drive](https://askubuntu.com/questions/532586/what-is-the-command-line-equivalent-of-safely-remove-drive)
+---
 
-#### How to mount/unmount an external storage device from the command line
+Date: 2025-02-02  
+OS/Distro: Ubuntu 24.04.1 LTS  
+Resources Used:  
+- [What is the command line equivalent of safely remove drive](https://askubuntu.com/questions/532586/what-is-the-command-line-equivalent-of-safely-remove-drive)  
 
-#### Mount
+---
+
+## Mount
 
 1. Connect the drive to your machine and open the terminal.
 2. Navigate to `mnt/` and make sure there is an empty directory to act as the mount point.
-
-	```bash
+	
+    ```bash
 	$ cd /mnt
 	$ mkdir externaldrive
 	```
 
-2. Determine the name of your device with `lsblk` (if you need to know the format of your drives filesystem, you can run `lsblk -f`). In my case, these were the results:
+3. Determine the name of your device with `lsblk` (if you need to know the format of your drives filesystem, you can run `lsblk -f`). In my case, these were the results:
 	![](images/lsblk.png)
-3. Mount the drive to your empty directory. Note: when I first tried this step I ran `sudo mount /dev/sdb /mnt/externaldrive`, which didn't work. I had to specify the partition, not the disk.
+
+4. Mount the drive to your empty directory. Note: when I first tried this step I ran `sudo mount /dev/sdb /mnt/externaldrive`, which didn't work. I had to specify the partition, not the disk.
 
 	```bash
 	$ sudo mount /dev/sdb1 /mnt/externaldrive
@@ -32,7 +43,7 @@ Resources Used:
 	$ ls
 	```
 
-#### Unmount
+## Unmount
 
 1. Unmount the drive. This is not the same as safely removing the drive, which comes next.
 

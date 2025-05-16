@@ -1,19 +1,23 @@
 ---
 layout: default
 title: Change SSH Default Port
+date: 2025-01-11
 domain: Guides
 system: Ubuntu
 ---
 
-# 2025-01-11
+# Change SSH Default Port
 
-## OS/Distro: Ubuntu 24.04.1 LTS
+---
 
-## Resources Used:
+Date: 2025-01-11  
+OS/Distro: Ubuntu 24.04.1 LTS  
+Resources Used:  
 - [How to Change the SSH Port in Linux - Linuxize](https://linuxize.com/post/how-to-change-ssh-port-in-linux/)
 - [sshd - SSH default port not changing (Ubuntu 22.10 and later) - Ask Ubuntu](https://askubuntu.com/a/1534466)
 
-# Change SSH Default Port
+---
+
 1. Port numbers 1 - 1024 are reserved for system services, so they're best left alone. Choose any port number >1024.
 
 2. Allow the port through the firewall.
@@ -32,7 +36,7 @@ system: Ubuntu
    
    ```
    #Port 22
-   Port 1676       # Added by seandavidreed
+   Port 1492       # Added by seandavidreed
    #AddressFamily any
    #ListenAddress 0.0.0.0
    #ListenAddress ::
@@ -50,7 +54,7 @@ system: Ubuntu
    $ sudo systemctl status ssh
    ```
 
-# Troubleshooting a problem on Ubuntu 24.04.1 LTS
+## Troubleshooting a problem on Ubuntu 24.04.1 LTS
 
 6. On Ubuntu 24.04.1 LTS, I had trouble getting the default port to actually change using steps 4 and 5. Consulting an answer on Ask Ubuntu (shared above), I got the default port to change.
    

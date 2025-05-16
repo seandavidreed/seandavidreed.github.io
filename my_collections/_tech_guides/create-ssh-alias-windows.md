@@ -1,9 +1,21 @@
-2025-02-26
+---
+layout: default
+title: Create SSH Alias on Windows
+domain: Guides
+system: Windows
+published: false
+---
 
-OS/Distro: Windows 11 Pro
+# Create an SSH Alias on Windows
 
-Resources Used:
-[Guide to Creating an ssh Alias on Windows](https://www.linsnotes.com/posts/guide-to-creating-an-ssh-alias-on-windows/)
+---
+
+Date: 2025-02-26  
+OS/Distro: Windows 11 Pro  
+Resources Used:  
+- [Guide to Creating an ssh Alias on Windows](https://www.linsnotes.com/posts/guide-to-creating-an-ssh-alias-on-windows/)
+
+---
 
 1. Create a config file in `C:\Users\%USERNAME%\.ssh\` via Powershell.
 	```

@@ -1,20 +1,19 @@
-<style>
-    h1 {
-        color: firebrick;
-        font-family: 'Marker Felt', fantasy;
-    }
+---
+layout: default
+title: Install MakeMKV and Flash Firmware to the ASUS BW-16D1HT Optical Drive
+date: 2025-04-25
+domain: Guides
+system: Ubuntu
+---
 
-    h2 {
-        color: slateblue;
-        font-family: 'Marker Felt', fantasy;
-    }
-</style>
 
-<h3 style="color:green">2025-04-25</h3>
+# Install MakeMKV and Flash Firmware to the ASUS BW-16D1HT Optical Drive
 
-OS/Distro: Ubuntu 24.04.2 LTS (Ubuntu Server)
+---
 
-Resources:
+Date: 2025-04-25  
+OS/Distro: Ubuntu 24.04.2 LTS (Ubuntu Server)  
+Resources Used:  
 1. [makemkv forum - makemkv for Linux](https://forum.makemkv.com/forum/viewtopic.php?f=3&t=224)
 2. [makemkv forum - Linux How To: Flash ASUS-BW-16D1HT](https://forum.makemkv.com/forum/viewtopic.php?t=22573)
 3. [makemkv - old versions](https://www.makemkv.com/download/old/)
@@ -23,8 +22,8 @@ Resources:
 6. [makemkv forum - Custom firmware pack with LibreDrive patches](https://forum.makemkv.com/forum/viewtopic.php?f=19&t=19113#p71880)
 7. [ffmpeg.org](https://ffmpeg.org/download.html)
 
-# Installing MakeMKV
-## Part 1 - Downloading Binary and Source Packages on Separate Computer
+## Installing MakeMKV
+### Part 1 - Downloading Binary and Source Packages on Separate Computer
 NOTE (2025-04-27): I ended up using makemkv version 1.17.7 since 1.18.1 did not seem to be working.
 1. Download the two files found at the resource on a separate computer with a GUI.
     ```
@@ -36,7 +35,7 @@ NOTE (2025-04-27): I ended up using makemkv version 1.17.7 since 1.18.1 did not 
     scp -P <port> -i /path/to/identityfile makemkv-bin-1.18.1.tar.gz <user>@ipaddress:/home/<user>/
     scp -P <port> -i /path/to/identityfile makemkv-oss-1.18.1.tar.gz <user>@ipaddress:/home/<user>/
     ```
-## Part 2 - Installing on Ubuntu Server Machine
+### Part 2 - Installing on Ubuntu Server Machine
 1. In my case, the files needed to be un-Gzipped.
     ```
     gzip -d makemkv-bin-1.18.1.tar.gz
@@ -76,7 +75,7 @@ NOTE (2025-04-27): I ended up using makemkv version 1.17.7 since 1.18.1 did not 
     ```
     Add `app_Key = "T-ojN79AT7nFd1NN90alqBt4Piy8I01A1Z42yZeufFiSz2iC3Tai8e9ZgWq8G1sFacmJ"` to the file. The above is my key as of April 2025, it will be different for you.
 
-## Part 3 - Flash ASUS BW-16D1HT with Libredrive
+## Flash ASUS BW-16D1HT with Libredrive
 This part almost made me throw my new optical drive off the balcony. Here's the steps that worked in the end. The most important resources were links 2, 3, and 4. It's not completely clear whether the problem was with the makemkv version (1.18.1) or the authority with which I was executing the commands (logged in as root or not). Executing `makemkvcon` created a **.MakeMKV** directory in my **/home** directory, and `sudo makemkvcon` created one in **/root**. The latter led to a successful rip. Below, you'll find the exact steps I took to make things work. \
 1. Find and delete installed binary files for version 1.18.1. Delete all .MakeMKV directories and log files.
     ```
@@ -118,7 +117,7 @@ This part almost made me throw my new optical drive off the balcony. Here's the 
 8. Done! That worked for me. Hopefully it works for you too.
 
 
-# Part 4 - [Optional] Upgrade ffmpeg
+## [Optional] Upgrade ffmpeg
 1. The tutorial says that most Linux distributions ship with an outdated version of ffmpeg, and therefore, is it recommended to install the latest version. On a separate machine, download ffmpeg from the website: [ffmpeg.org](https://ffmpeg.org/download.html)
 2. Send it over to Ubuntu Server machine.
     ```
@@ -154,5 +153,5 @@ This part almost made me throw my new optical drive off the balcony. Here's the 
     ```
 10. Done!
 
-## Note
+### Note
 Before doing all this, I ran `ffmpeg -version` and found I had version 6.1.1, which given the downloaded file `ffmpeg-7.1.1.tar.xz`, didn't seem like the latest version. Running `sudo apt upgrade ffmpeg` worked, but the version number didn't change. Furthermore, the version number didn't change with the whole above process of compiling from source. Either I messed something up, or I had the latest version to begin with.
