@@ -15,46 +15,36 @@ Since I first started programming and building a foundation in Computer Science,
 		<h3>Courses</h3>
 	</div>
 	<div class="row">
-		<div class="archive column">
-			{% assign cs50x = site.old_log | where: "subject", "CS50x" %}
+		<!-- Entry with multiple documents -->
+		<a class="archive column" href="/cs50x.html">
 			<h4 style="margin: 0px">CS50x</h4>
-			{% for entry in cs50x %}
-				<div>
-					<a href="{{ entry.url }}">{{ entry.title }}</a>
-				</div>
-			{% endfor %}
-		</div>
-		<div class="archive column">
-			{% assign sololearn = site.old_log | where: "subject", "Sololearn" %}
-			<h4 style="margin: 0px">Sololearn</h4>
-			{% for entry in sololearn %}
-				<div>
-					<a href="{{ entry.url }}">{{ entry.title }}</a>
-				</div>
-			{% endfor %}
-		</div>
+		</a>
+
+		<!-- Entry with a single document -->
+		{% assign items = site.old_log | where: "subject", "Sololearn" %}
+		{% for item in items %}
+		<a class="archive column" href="{{ item.url }}">
+			<h4 style="margin: 0px">{{ item.subject }}</h4>
+		</a>
+		{% endfor %}
 	</div>
 	<div class="row">
 		<h3>Projects</h3>
 	</div>
 	<div class="row">
-		<div class="archive column">
-			{% assign studentlog = site.old_log | where: "subject", "Student Log" %}
+		<!-- Entry with multiple documents -->
+		<a class="archive column" href="/studentlog.html">
 			<h4 style="margin: 0px">Student Log</h4>
-			{% for entry in studentlog %}
-				<div>
-					<a href="{{ entry.url }}">{{ entry.title }}</a>
-				</div>
-			{% endfor %}
-		</div>
-	</div>	
+		</a>
+	</div>
+	<hr>	
 	<div class="row">
 		<h2>Unparsed</h2>
 	</div>
 	<div class="archive-row row">
 		{% assign unparsed = site.old_log | where: "domain", "Unparsed" | reverse %}
 		{% for entry in unparsed %}
-			<div class="archive column"><h3><a href="{{ entry.url }}">{{ entry.title }}</a></h3></div>
+		<a class="archive column" href="{{ entry.url }}"><h3>{{ entry.title }}</h3></a>
 		{% endfor %}
 	</div>
 </div>

@@ -1,0 +1,12 @@
+---
+layout: default
+title: CS50x
+---
+
+<h1>CS50x</h1>
+{% assign cs50x = site.old_log | where: "subject", "CS50x" %}
+{% for entry in cs50x %}
+    <div>
+        <a href="{{ entry.url }}">{{ entry.title }}</a>
+    </div>
+{% endfor %}

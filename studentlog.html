@@ -1,0 +1,12 @@
+---
+layout: default
+title: Student Log
+---
+
+<h1>Student Log</h1>
+{% assign studentlog = site.old_log | where: "subject", "Student Log" %}
+{% for entry in studentlog %}
+	<div>
+		<a href="{{ entry.url }}">{{ entry.title }}</a>
+	</div>
+{% endfor %}
