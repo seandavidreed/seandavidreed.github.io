@@ -80,8 +80,10 @@ body {
 	
 	/* UNIVERSAL IMAGE SETTINGS */
 	img {
+		position: relative;
 		width: 100%;
 		height: auto;
+		z-index: -1;
 	}
 
 	/* UNIVERSAL MAIN SETTINGS */	
@@ -239,6 +241,10 @@ body {
 			background: #ccc;
 			color: black;
 		}
-	}	
+	}
+
+	img {
+		filter: invert(1);
+	}
 }
 
