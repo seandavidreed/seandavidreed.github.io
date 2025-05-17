@@ -27,6 +27,14 @@ Since I first started programming and building a foundation in Computer Science,
 			<h4 style="margin: 0px">{{ item.subject }}</h4>
 		</a>
 		{% endfor %}
+		
+		<!-- Entry with a single document -->
+		{% assign items = site.old_log | where: "subject", "Bare Metal C" %}
+		{% for item in items %}
+		<a class="archive column" href="{{ item.url }}">
+			<h4 style="margin: 0px">{{ item.subject }}</h4>
+		</a>
+		{% endfor %}
 	</div>
 	<div class="row">
 		<h3>Projects</h3>
