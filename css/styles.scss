@@ -228,7 +228,7 @@ body {
 }
 
 /* MODIFY DARKMODE TO INCLUDE MATHJAX */
-.darkmode--activated {
+.darkmode--activated:not(.github-button) {
 	.MathJax {
 		color: white;
 	}
