@@ -292,7 +292,7 @@ My goal is to connect the PIR (Pyroelectric InfraRed) Motion Sensor I got from A
 	```
 	Looking at the development board, I saw that pin 13 was also named `SCK`. I divined that I could connect my PIR Motion Sensor to this pin and use the macros above, and it worked! Here's a picture:
 
-	![Connecting the PIR to Nucleo](images/nucleo_pir.jpg)
+	![Connecting the PIR to Nucleo](/images/nucleo_pir.jpg)
 
 ---
 
@@ -406,7 +406,7 @@ I have to say that, after looking through the assembly code, I was a little perp
 
 ---
 
-# 2/14/2023 [fraction.c](files/bare_metal_c/fraction.c)
+# 2/14/2023 [fraction.c](/files/bare_metal_c/fraction.c)
 Wow, I had way too much fun with Problem 1 of Chapter 8, and I learned a ton. The problem is written as follows:
 
 "Create a structure to hold a fraction. Then create procedures that add, subtract, multiply, and divide fractions. The fractions should be stored in normalized form. In other words, 2/4 should be stored as 1/2."
