@@ -9,9 +9,10 @@ title: Guides
 When I configure a server, tinker with a Linux distribution, flash firmware to an optical drive, establish a remote SSH connection, or compile some complex software from source code, I catalog the process, explaining every step I took. When I make use of guides that others have written or recorded, I make note of it under <i>Resources Used</i>. I write these guides to remind myself of the exact steps I followed to solve a problem, and to offer assistance to anyone who has the same problem. 
 </p>
 <hr>
-	{% for guide in site.tech_guides %}
-		<span style="float: left; color: gray">{{ guide.date | date: "%m/%d/%Y" }}</span>
-		<div style="display: block; padding: 0px 0px 0px 110px">
+	{% assign guides = site.tech_guides | reverse %}
+	{% for guide in guides %}
+		<span style="float: left; color: gray; font-family: Montserrat, sans-serif">{{ guide.date | date: "%m/%d/%Y" }}</span>
+		<div style="display: block; padding: 0px 0px 0px 90px; font-family: Lucida Console, Monaco, monospace">
 				<a href="{{ guide.url }}">{{ guide.title }}</a>
 		</div>
 	{% endfor %}

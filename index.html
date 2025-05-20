@@ -20,8 +20,8 @@ title: Home
 	<h2 style="height: 30px;">Latest Posts</h2>
 	<hr>
 	{% for post in site.posts limit: 10 %}
-		<span style="float: left; color: gray">{{ post.date | date: "%m/%d/%Y" }}</span>
-		<div style="display: block; padding: 0px 0px 0px 110px">
+		<span style="float: left; color: gray; font-family: Montserrat, sans-serif">{{ post.date | date: "%m/%d/%Y" }}</span>
+		<div style="display: block; padding: 0px 0px 0px 90px; font-family: Lucida Console, Monaco, monospace">
 			<a href="{{ post.url }}">{{ post.title }}</a>
 		</div>
 	{% endfor %}
