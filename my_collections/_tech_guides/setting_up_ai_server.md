@@ -1,5 +1,5 @@
 ---
-layout: default
+layout: guide
 title: Setting Up an AI Server with Ollama and Docker
 date: 2025-02-10
 domain: Guides

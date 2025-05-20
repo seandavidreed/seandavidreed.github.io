@@ -1,5 +1,5 @@
 ---
-layout: default
+layout: guide
 title: Expand Your Root Partition
 date: 2025-05-04
 domain: Guides

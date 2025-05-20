@@ -1,5 +1,5 @@
 ---
-layout: default
+layout: guide
 title: Find Your Router IP Range
 date: 2025-01-09
 domain: Guides

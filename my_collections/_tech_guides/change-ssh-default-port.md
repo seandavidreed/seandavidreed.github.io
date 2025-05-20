@@ -1,5 +1,5 @@
 ---
-layout: default
+layout: guide
 title: Change SSH Default Port
 date: 2025-01-11
 categories: Linux

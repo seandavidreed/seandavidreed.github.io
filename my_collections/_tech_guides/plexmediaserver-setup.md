@@ -1,5 +1,5 @@
 ---
-layout: default
+layout: guide
 title: Plex Media Server Setup
 date: 2025-02-25
 domain: Guides

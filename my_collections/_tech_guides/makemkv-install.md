@@ -1,5 +1,5 @@
 ---
-layout: default
+layout: guide
 title: Install MakeMKV and Flash Firmware to the ASUS BW-16D1HT Optical Drive
 date: 2025-04-25
 domain: Guides

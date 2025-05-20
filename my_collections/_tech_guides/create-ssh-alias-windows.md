@@ -1,5 +1,5 @@
 ---
-layout: default
+layout: guide
 title: Create SSH Alias on Windows
 domain: Guides
 system: Windows

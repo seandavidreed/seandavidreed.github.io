@@ -1,5 +1,5 @@
 ---
-layout: default
+layout: guide
 title: Slackware Package Management
 date: 2025-04-23
 domain: Guides

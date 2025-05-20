@@ -1,5 +1,5 @@
 ---
-layout: default
+layout: guide
 title: Set Up a Static IP Address
 date: 2025-01-09
 categories: Linux

@@ -1,5 +1,5 @@
 ---
-layout: default
+layout: guide
 title: Configure Remote SSH Connection to Server
 date: 2025-01-11
 domain: Guides

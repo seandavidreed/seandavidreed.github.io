@@ -1,5 +1,5 @@
 ---
-layout: default
+layout: guide
 title: Ubuntu Server Setup
 date: 2025-02-24
 categories: Linux

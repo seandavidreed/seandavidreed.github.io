@@ -1,5 +1,5 @@
 ---
-layout:
+layout: guide
 title: Find Public IP Address
 date: 2025-01-11
 domain: Guides

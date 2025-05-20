@@ -1,5 +1,5 @@
 ---
-layout: default
+layout: guide
 title: Setup SSH Key Access
 date: 2025-01-12
 domain: Guides

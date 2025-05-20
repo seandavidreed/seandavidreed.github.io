@@ -1,5 +1,5 @@
 ---
-layout: default
+layout: guide
 title: How to Mount/Unmount an External Storage Device from the Command Line
 date: 2025-02-02
 domain: Guides

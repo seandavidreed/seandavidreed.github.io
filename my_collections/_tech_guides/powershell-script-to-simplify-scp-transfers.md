@@ -1,5 +1,5 @@
 ---
-layout: default
+layout: guide
 title: Write a Powershell Script to Simplify SCP Transfer Syntax
 date: 2025-02-27
 domain: Guides

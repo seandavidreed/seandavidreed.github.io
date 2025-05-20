@@ -1,5 +1,5 @@
 ---
-layout: default
+layout: guide
 title: Using Handbrake to Backup DVDs
 date: 2025-03-26
 domain: Guides

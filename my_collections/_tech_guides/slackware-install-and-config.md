@@ -1,5 +1,5 @@
 ---
-layout: default
+layout: guide
 title: Installing and Configuring Slackware
 date: 2025-04-22
 domain: Guides

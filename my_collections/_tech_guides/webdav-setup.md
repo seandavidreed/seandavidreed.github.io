@@ -1,5 +1,5 @@
 ---
-layout: default
+layout: guide
 title: WebDAV Setup
 date: 2025-01-07
 categories: Server

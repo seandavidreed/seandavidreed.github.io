@@ -1,5 +1,5 @@
 ---
-layout: default
+layout: guide
 title: Troubleshooting Docker DNS
 date: 2025-02-12
 categories: Docker
