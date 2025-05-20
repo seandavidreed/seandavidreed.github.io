@@ -20,7 +20,7 @@ I'll be modifying the layout and content of this site for the foreseeable future
 6. Open firefox and navigate to **http://127.0.0.1:4000**.
 7. Return to the terminal and open the files I need to edit in Vim.
 
-After following this routine perhaps over 100 times, I decided a bash script was in order. [Here's the full script](/files/bash_scripts/jekky.sh) with personal directories redacted; I'll also break down what I wrote.
+After following this routine perhaps over 100 times, I decided a bash script was in order. [Here's the full script](/files/bash_scripts/jekyll-bash-script.html) with personal directories redacted; I'll also break down what I wrote.
 
 ## Script Breakdown
 

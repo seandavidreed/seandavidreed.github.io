@@ -1,17 +1,23 @@
-#!/bin/bash
-# 2025-05-19
-# A simple script to help me setup my vim development environment for jekyll
+---
+layout: program
+---
+
+\#!/bin/bash  
+\# 2025-05-19  
+\# A simple script to help me setup my vim development environment for jekyll  
 
 if [[ $2 ]];then
 
 	echo "Too many arguments. Usage: jek [ start | stop ]"
 	return 1
+
 fi
 
 if [[ $1 == "" ]];then
 
 	echo "Too few arguments. Usage: jek [ start | stop ]"
 	return 1
+
 fi
 
 if [[ $1 == "start" ]];then
@@ -32,6 +38,7 @@ if [[ $1 == "start" ]];then
 	ls
 
 	return 0
+
 fi
 
 if [[ $1 == "stop" ]];then
@@ -40,8 +47,9 @@ if [[ $1 == "stop" ]];then
 	tmux ls
 	echo "Stopped."
 	return 0
+
 fi
 
-echo "Invalid argument. Usage: jek [ start | stop ]"
+echo "Invalid argument. Usage: jek [ start \| stop ]"
 
 return 1
