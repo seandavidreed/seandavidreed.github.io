@@ -95,4 +95,20 @@ echo "Invalid argument. Usage: jek [ start | stop ]"
 return 1
 ```
 
-That's it! Initially, the script was much simpler, but I added in the error handling and messages for posterity. I'm always happy to find an excuse to write a bash script!
+## Why Return Instead of Exit?
+
+Ordinarily, when a bash script needs to terminate early, an *exit* statement is used. Scripts run in their separate process, so exiting a script means *exiting* that process to return to the shell that called it. 
+
+My script needs to change my directory to that of the jekyll website. If I run it as a script, the directory change won't persist when the script ends and separate process terminates. To get around this, I created an alias that calls the script as a shell function by prepending a dot. That way, it won't create a separate process.
+
+```
+echo "alias jek='. ~/path/to/script'" >> ~/.bashrc
+```
+
+In my case, I keep a separate file **~/.bash_aliases** that links to the **~/.bashrc** file.
+
+Since my script runs as a shell function, if I used *exit* statements, the whole shell will close. Instead, I use *return* statements, which only affect the running of the shell function.
+
+## That's It
+
+Initially, the script was much simpler, but I added in the error handling and messages for posterity. I'm always happy to find an excuse to write a bash script!
