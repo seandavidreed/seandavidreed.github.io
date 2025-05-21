@@ -16,7 +16,7 @@ Resources Used (External):
 - [Download the Ubuntu iso image](https://ubuntu.com/tutorials/try-ubuntu-before-you-install#1-getting-started)
 
 Relevant Documents (Internal):  
-- [Slackware Install and Config](slackware-install-and-config.md)
+- [Slackware Install and Config](slackware-install-and-config.html)
 
 ---
 
