@@ -170,6 +170,14 @@ body {
 
 	
 	/* BREAKPOINTS */
+	@media (max-width: $bp-smallphone) {
+		.index {
+			.tagline {
+				display: none;
+			}
+		}
+	}
+
 	@media (min-width: $bp-smallphone) {
 		.main {
 			padding: 20px;
