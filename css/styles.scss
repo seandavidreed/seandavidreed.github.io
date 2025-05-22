@@ -18,8 +18,8 @@ body {
 	justify-content: center;
 	padding: 0px;
 	margin: 0px;
-	min-height: 100vh;
 	overflow: scroll;
+	min-height: 100vh;
 	
 	/* UNIVERSAL TYPEFACE SETTINGS */
 	font-family: "Lucida Sans Typewriter", 
@@ -69,6 +69,19 @@ body {
 			isolation: isolate;
 		}
 	}
+
+	/* UNIVERSAL FOOTER SETTINGS */
+	footer {
+		position: fixed;
+		display: flex;
+		height: 100px;
+		width: 100%;
+		left: 0;
+		bottom: 0;
+		background-color: black;
+		align-items: center;
+		color: white;
+	}
 	
 	/* UNIVERSAL ANCHOR SETTINGS */	
 	a {
@@ -100,6 +113,7 @@ body {
 		justify-content: center;
 		overflow: scroll;
 		margin-top: 50px;
+		margin-bottom: 100px;
 	}
 
 	/* UNIVERSAL CODE BLOCK SETTINGS */
