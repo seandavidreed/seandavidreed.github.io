@@ -10,6 +10,7 @@ $bp-largeputer: 1200px;
 /* IMPORT SELF-HOSTED FONTS */
 @import url("/fonts/Exile/font-settings.css");
 @import url("/fonts/IndieFlower/font-settings.css");
+@import url("/fonts/MajorMonoDisplay/font-settings");
 
 body {
 	/* UNIVERSAL LAYOUT SETTINGS */
@@ -141,7 +142,7 @@ body {
 		
 		/* LOCAL INDEX PAGE SETTINGS */
 		.index {
-			font-family: "Indie Flower", sans-serif;
+			font-family: "Major Mono Display", sans-serif;
 			font-size: 25pt;
 			line-height: 0.1pt;
 			column-gap: 0px;
