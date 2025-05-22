@@ -32,10 +32,10 @@ body {
 	
 	/* UNIVERSAL NAV SETTINGS */
 	nav {
+		display: flex;
 		background-color: black;
 		position: fixed;
 		width: 100vw;
-		display: flex;
 		align-items: center;
 		justify-content: center;
 		column-gap: 5px;
@@ -61,6 +61,18 @@ body {
 			color: black;
 			background: white;
 		}
+
+		#darkmode-input {
+			height: auto;
+			width: 30px;
+			border-radius: 10px;
+			align-items: center;
+		}
+
+		#darkmode-input:hover {
+			background-color: black;
+			filter: invert(1);
+		}
 		
 		.github-button {
 			border: none;
@@ -72,15 +84,18 @@ body {
 
 	/* UNIVERSAL FOOTER SETTINGS */
 	footer {
-		position: fixed;
+		padding: 0px;
+		margin: 0px;
 		display: flex;
-		height: 100px;
+		background-color: black;
+		position: sticky;
 		width: 100%;
+		height: 100px;
 		left: 0;
 		bottom: 0;
-		background-color: black;
 		align-items: center;
 		color: white;
+		z-index: 99;
 	}
 	
 	/* UNIVERSAL ANCHOR SETTINGS */	
@@ -113,7 +128,6 @@ body {
 		justify-content: center;
 		overflow: scroll;
 		margin-top: 50px;
-		margin-bottom: 100px;
 	}
 
 	/* UNIVERSAL CODE BLOCK SETTINGS */
@@ -274,8 +288,10 @@ body {
 	.MathJax {
 		color: white;
 	}
-}
+	
+	#darkmode-input {
+		background-color: black;
+		filter: invert(1);
+	}
 
-.darkmode-toggle {
-	z-index: 2;
 }
