@@ -99,8 +99,6 @@ body {
 		/* LAYOUT */
 		justify-content: center;
 		overflow: scroll;
-		border: 5px ridge;
-		border-color: black;
 		margin-top: 50px;
 	}
 
@@ -217,6 +215,9 @@ body {
 		.main {
 			padding: 20px;
 			width: 70%;
+			border-left: 2px solid;
+			border-right: 2px solid;
+			border-color: black;
 		}
 
 		.index {
