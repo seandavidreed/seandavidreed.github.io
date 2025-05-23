@@ -10,7 +10,7 @@ $bp-largeputer: 1200px;
 /* IMPORT SELF-HOSTED FONTS */
 @import url("/fonts/Exile/font-settings.css");
 @import url("/fonts/IndieFlower/font-settings.css");
-@import url("/fonts/MajorMonoDisplay/font-settings");
+@import url("/fonts/Tomorrow/font-settings.css");
 
 body {
 	/* UNIVERSAL LAYOUT SETTINGS */
@@ -168,7 +168,8 @@ body {
 		
 		/* LOCAL INDEX PAGE SETTINGS */
 		.index {
-			font-family: "Major Mono Display", sans-serif;
+			font-family: "Tomorrow", sans-serif;
+			font-weight: bold;
 			font-size: 25pt;
 			line-height: 0.1pt;
 			column-gap: 0px;

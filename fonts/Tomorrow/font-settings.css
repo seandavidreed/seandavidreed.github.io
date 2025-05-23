@@ -1,0 +1,17 @@
+@font-face {
+	font-family: "Tomorrow";
+	src: url(/fonts/Tomorrow/Tomorrow-Regular.ttf) format('truetype');
+	font-weight: 400;
+}
+
+@font-face {
+	font-family: "Tomorrow";
+	src: url(/fonts/Tomorrow/Tomorrow-Bold.ttf) format('truetype');
+	font-weight: bold;
+}
+
+@font-face {
+	font-family: "Tomorrow";
+	src: url(/fonts/Tomorrow/Tomorrow-Italic.ttf) format('truetype');
+	font-style: italic;
+}
