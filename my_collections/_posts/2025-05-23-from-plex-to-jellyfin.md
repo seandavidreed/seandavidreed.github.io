@@ -16,4 +16,4 @@ Stuffy philsophical views aside, installing Jellyfin provided an opportunity to 
 
 I wrote a guide of the whole install and configuration process. Looking back on it, it really is quite simple. However, I still had some difficulties. There were some key things I didn't know, and worse, I didn't know that I didn't know them. For instance, when first configuring the reverse proxy, I was trying to point my DDNS domain to the static IP of my server machine, *192.x.x.x*, instead of the IP for localhost, *127.0.0.1*. That silly error was one of several that dragged out the process.
 
-Next time I configure a server in this way, i.e. with a reverse proxy, it will be much easier. [Here's the guide I wrote](configure-jellyfin-caddy-dynuDDNS.html).
+Next time I configure a server in this way, i.e. with a reverse proxy, it will be much easier. [Here's the guide I wrote](/tech_guides/configure-jellyfin-caddy-dynuDDNS.html).
