@@ -21,7 +21,7 @@ OS/Distro: Ubuntu 24.04.1 LTS
 2. Locate your connection and click the _gear_ icon.
 3. Select the IPv4 tab and set _IPv4 Method_ to _Manual_.
 4. Populate the _Address_, _Netmask_, _Gateway_, and _DNS_ fields with the following values:
-   - Address: 192.168.x.x - It's often easiest to find the current dynamic IP address  and simply make that one static. Run `$ hostname -I`. Otherwise, you can select one from the IP range: [Find Router IP Range](find-router-ip-range.md)
+   - Address: 192.168.x.x - It's often easiest to find the current dynamic IP address  and simply make that one static. Run `$ hostname -I`. Otherwise, you can select one from the IP range: [Find Router IP Range](find-router-ip-range.html)
    - Netmask: 255.255.255.0
    - Gateway: 192.168.x.x - Find this IP by running `$ route -n`
    - DNS: 1.1.1.1, 8.8.8.8 - (I've been able to omit this before)
