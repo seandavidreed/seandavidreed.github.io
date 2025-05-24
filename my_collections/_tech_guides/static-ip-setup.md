@@ -54,5 +54,5 @@ OS/Distro: Ubuntu 24.04.1 LTS
     addresses: [8.8.8.8, 8.8.4.4]
     ```
 
-4. `sudo netplan apply` -> this command may log you out. To log back in, `ssh username@static-ip-you-chose`
+4. `sudo netplan apply`. This command may log you out. To log back in, `ssh username@static-ip-you-chose`.
 5. Done!
