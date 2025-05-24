@@ -38,20 +38,20 @@ OS/Distro: Ubuntu 24.04.1 LTS
 
     ```
     network:
-    wifis:
-    wlp1s0:
-    optional: true
-    access-points:
-    "SSID":
-    password: "password"
-    dhcp4: false
-    addresses:
-    - <static-ip-of-your-choice>/24
-    routes:
-    - to: default
-    via: <router-internal-ip>
-    nameservers:
-    addresses: [8.8.8.8, 8.8.4.4]
+        wifis:
+            wlp1s0:
+                optional: true
+                access-points:
+                    "<SSID>":
+                        password: "<password>"
+                dhcp4: false
+                addresses:
+                    - <static-ip-of-your-choice>/24
+                routes:
+                    - to: default
+                    via: <router-private-ip>
+                nameservers:
+                    addresses: [8.8.8.8, 8.8.4.4]
     ```
 
 4. `sudo netplan apply`. This command may log you out. To log back in, `ssh username@static-ip-you-chose`.
