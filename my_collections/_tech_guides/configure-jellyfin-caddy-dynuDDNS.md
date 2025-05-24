@@ -39,7 +39,7 @@ Since my server is headless, I had to access the Jellyfin Setup Wizard via a bro
     sudo ufw add allow 8096/tcp
     ```
 
-- Open a browser on a separate machine and access your Jellyfin server with **<static-ip-address>:8096**. From here, it's straightforward to create your users and simply click through the Setup Wizard.
+- Open a browser on a separate machine and access your Jellyfin server with **\<static-ip-address\>:8096**. From here, it's straightforward to create your users and simply click through the Setup Wizard.
 
 ## Install Caddy
 
@@ -192,7 +192,7 @@ Reload!
 caddy reload
 ```
 
-SSL Certificates should automatically generate. In a browser, input the following: **https://<your-ddns-domain>**. *"Hello, world!"* should appear.
+SSL Certificates should automatically generate. In a browser, input the following: **https://\<your-ddns-domain\>**. *"Hello, world!"* should appear.
 
 ## Finishing Touches
 
