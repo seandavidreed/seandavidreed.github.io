@@ -25,5 +25,14 @@ title: Home
 			<a href="{{ post.url }}">{{ post.title }}</a>
 		</div>
 	{% endfor %}
+	<hr>
+	<h2 style="height: 30px;">Latest Guides</h2>
+	<hr>
+	{% for guide in site.tech_guides limit: 10 %}
+		<span style="float: left; color: gray; font-family: Montserrat, sans-serif; font-size: 10">{{ guide.date | date: "%m/%d/%Y" }}</span>
+		<div style="display: block; padding: 0px 0px 0px 90px; font-family: Lucida Console, Monaco, monospace">
+			<a href="{{ post.url }}">{{ guide.title }}</a>
+		</div>
+	{% endfor %}	
 </div>
 
