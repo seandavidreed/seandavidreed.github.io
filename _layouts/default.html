@@ -5,12 +5,6 @@
 		<meta name="viewport" content="device-width, initial-scale=1">
 		<title>{{ page.title }}</title>
 		<link href="/css/styles.css" rel="stylesheet">
-		<script>
-			function scrollToTop() {
-				document.body.scrollTop = 0;
-				document.documentElement.scrollTop = 0;
-			}
-		</script>
 		<script src="https://cdn.jsdelivr.net/npm/darkmode-js@1.5.7/lib/darkmode-js.min.js"></script>
 		<script>
 			MathJax = {
@@ -30,6 +24,32 @@
 	<body>
 		<script>
 			const darkmode = new Darkmode();
+			
+			function scrollToTop() {
+				document.body.scrollTop = 0;
+				document.documentElement.scrollTop = 0;
+			}
+
+			function darkMode(darkmode, toggleEnabled) {
+				if (toggleEnabled == true) {
+					darkmode.toggle();
+				}
+
+				let dark = document.getElementById("darkmode");
+				let light = document.getElementById("lightmode");
+				if (darkmode.isActivated()) {
+					dark.disabled = true;
+					light.disabled = false;
+				}
+				else {
+					dark.disabled = false;
+					light.disabled = true;
+				}
+			}
+
+			window.addEventListener("load", function() { 
+				darkMode(darkmode, false); 
+			});
 		</script>
 		<nav>
 			<a href="/index.html">Home</a>
@@ -37,7 +57,10 @@
 			<a href="/blog.html">Blog</a>
 			<a href="/guides.html">Guides</a>
 			<a href="/projects.html">Projects</a>
-			<input id="darkmode-input" type="image" alt="darkmode" src="/images/Crescent-Moon-PNG-Picture.png" onclick="darkmode.toggle();">
+			<div>
+				<input id="lightmode" class="darkmode-input" type="image" alt="lightmode" src="/images/light-mode.png" onclick="darkMode(darkmode, true);">
+				<input id="darkmode" class="darkmode-input" type="image" alt="darkmode" src="/images/Crescent-Moon-PNG-Picture.png" onclick="darkMode(darkmode, true);">
+			</div>
 		</nav>
 		<div class="main">
 			{{ content }}
@@ -52,7 +75,7 @@
 			</div>
 			<div class="row" style="justify-content: space-between; margin-bottom: 35px">
 				<a href="/bookshelf.html">Bookshelf</a>
-				<input id="to-top" type="image" src="/images/back-to-top-icon.png" style="height: auto; width: 30px" onclick="scrollToTop();">
+				<input id="to-top" type="image" src="/images/scroll-up-icon.png" style="height: auto; width: 30px; filter: invert(1); padding: 0px 15px 4px" onclick="scrollToTop();">
 			</div>
 		</footer>
 	</body>

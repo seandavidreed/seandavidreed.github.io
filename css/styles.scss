@@ -69,17 +69,17 @@ nav {
 		background: white;
 	}
 
-	#darkmode-input {
+	.darkmode-input {
 		height: auto;
 		width: 30px;
 		border-radius: 10px;
 		align-items: center;
 	}
 
-	#darkmode-input:hover {
-		background-color: black;
-		filter: invert(1);
-	}
+	//.darkmode-input:hover {
+	//	background-color: black;
+	//	filter: invert(1);
+	//}
 }
 
 /* UNIVERSAL FOOTER SETTINGS */
@@ -201,6 +201,10 @@ img {
 }
 
 /* MODIFY DARKMODE */
+#lightmode {
+	background-color: black;
+	filter: invert(1);
+}
 .darkmode--activated {
 	.highlight {
 		background: #ccc;
@@ -215,15 +219,18 @@ img {
 		color: white;
 	}
 	
-	#darkmode-input {
+	#darkmode {
 		background-color: black;
 		filter: invert(1);
+	}
+
+	#lightmode {
+		filter: unset;
 	}
 
 	nav, footer {
 		border-color: white;
 	}
-
 }
 
 /* BREAKPOINTS */
