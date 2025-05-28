@@ -15,6 +15,12 @@ title: Projects
 	When I first started teaching, I kept track of all my students info and assignment in a spreadsheet. It worked fine, but I didn’t prefer all the copy/paste operations, mouse usage, and scrolling it required. I wanted a more streamlined create, read, update, and delete format that relied only on the keyboard. I made Student Log to do just that: it was my first full program written in C, and I still use it for work today.
 <p>
 <hr>
+<h2><a target="_blank" href="https://github.com/seandavidreed/RSA_demo">RSA Encryption Demo</a> &#x1F517;</h2>
+<hr>
+<p>
+In an effort to understand the RSA Cryptosystem more deeply, I researched it, <a href="2024/09/04/rsa-encryption-a-walkthrough.html" style="color: orange">wrote a blog post</a>, and programmed a demonstration in Python. The program consists of a few functions: <b>choose_pq()</b>, which relies on a random prime number generating function and is one of the more complex steps in the process; <b>totient()</b>, which computes $\phi(pq) = (p-1)(q-1)$; and <b>extended_euclidean()</b>, which computes the exponent $d$, the multiplicative inverse of $e$. $e$ is used to <i>encrypt</i> the message and $d$ is used to <i>decrypt</i> it. It's really quite an elegant system.
+</p>
+<hr>
 <h2><a target="_blank" href="https://github.com/seandavidreed/hasse-diagram-generator">Hasse Diagram Generator</a> &#x1F517;</h2>
 <p>
 	While teaching myself Discrete Mathematics with the book Introductory Discrete Mathematics, I decided to build a small CLI application that builds Hasse diagrams. The user inputs the members of a set one at a time and then selects the type of relation from a list – less than relation, divisibility relation, or custom. For the Hasse Diagram to be valid, the set must be a partially-ordered set, being reflexive, antisymmetric, and transitive. Once this partially-ordered set is defined, the program draws the diagram on a canvas and outputs it as a jpg file.
