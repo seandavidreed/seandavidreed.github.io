@@ -5,6 +5,12 @@
 		<meta name="viewport" content="device-width, initial-scale=1">
 		<title>{{ page.title }}</title>
 		<link href="/css/styles.css" rel="stylesheet">
+		<script>
+			function scrollToTop() {
+				document.body.scrollTop = 0;
+				document.documentElement.scrollTop = 0;
+			}
+		</script>
 		<script src="https://cdn.jsdelivr.net/npm/darkmode-js@1.5.7/lib/darkmode-js.min.js"></script>
 		<script>
 			MathJax = {
@@ -44,10 +50,10 @@
 			<div class="row">
 				<a href="/archive.html">Archive</a>
 			</div>
-			<div class="row">
+			<div class="row" style="justify-content: space-between; margin-bottom: 35px">
 				<a href="/bookshelf.html">Bookshelf</a>
+				<input id="to-top" type="image" src="/images/back-to-top-icon.png" style="height: auto; width: 30px" onclick="scrollToTop();">
 			</div>
-
 		</footer>
 	</body>
 </html>
