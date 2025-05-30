@@ -16,6 +16,7 @@ $footer-footprint: 165px;
 @import url("/fonts/Tiny5/font-settings.css");
 @import url("/fonts/Tomorrow/font-settings.css");
 @import url("/fonts/Sixtyfour/font-settings.css");
+@import url("/fonts/SourceCodePro/font-settings.css");
 
 /* UNIVERSAL SETTINGS */
 body {
@@ -168,7 +169,7 @@ img {
 
 /* LOCAL INDEX PAGE SETTINGS */
 .index {
-	font-family: "Tiny5", sans-serif;
+	font-family: "Source Code Pro", sans-serif;
 	font-weight: bold;
 	font-size: 25pt;
 	line-height: 50px;
