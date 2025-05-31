@@ -2,6 +2,8 @@
 layout: post
 title: Static vs. Dynamic Arrays
 author: Sean David Reed
+date: 2024-09-16
+category: "Data Structures and Algorithms"
 ---
 ## What is an Array?
 

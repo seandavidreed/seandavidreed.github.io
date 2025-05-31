@@ -3,7 +3,7 @@ layout: post
 title: From Plex to Jellyfin
 author: Sean David Reed
 date: 2025-05-23
-categories: Linux Ubuntu Servers Jellyfin
+category: Servers
 ---
 
 On April 29th, Plex increased the prices of its Plex pass subscription plans an d moved some key features behind that paywall. After that date, a Plex pass would be required to play video content remotely. The change was announced well in advance, and given I've been running a Plex media server since the start of this year, I knew I would have to do something about it: either cough up \\$120 dollars for the lifetime Plex pass before it jumped to \\$250, or switch to Jellyfin.

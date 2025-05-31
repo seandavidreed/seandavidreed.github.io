@@ -2,6 +2,8 @@
 layout: post
 title: Hasse Diagrams with Rust
 author: Sean David Reed
+date: 2024-08-01
+category: Mathematics
 ---
 
 While studying Chapter 0 of the book [Introductory Discrete Mathematics](https://www.goodreads.com/book/show/641871.Introductory_Discrete_Mathematics) in my spare time, I decided to write a program that could generate a [Hasse Diagram](https://en.wikipedia.org/wiki/Hasse_diagram) from a partially-ordered set. I wrote this entry after my first big breakthrough with the program design. In another post, I'll show what I was missing in this implementation.

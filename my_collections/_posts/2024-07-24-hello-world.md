@@ -2,6 +2,8 @@
 layout: post
 title: Hello, World!
 author: Sean David Reed
+date: 2024-07-24
+category: Miscellaneous
 ---
 I’m a Music Instructor working to become a Software Engineer. I’ve been teaching 1-on-1 guitar, bass, and ukulele lessons with over 40 students a week for the past five years. Two of my favorite things about teaching – facilitating eureka moments with my students and becoming a better learner myself.
 
