@@ -4,7 +4,7 @@ title: Blog
 ---
 <h1>Blog</h1>
 <hr>
-<h2>By Category</h2>
+<h2>Categorical</h2>
 {% assign categories = site.posts | map: "category" | sort_natural %}
 {% for category in categories %}
 	<h3>{{ category }}</h3>
