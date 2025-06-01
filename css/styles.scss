@@ -48,12 +48,12 @@ body {
 	width: 100%;
 	
 	a:not(.home-link) {
-		border: 2px solid;
-		background-color: white;
-		border-color: black;
+		//border: 2px solid;
+		//background-color: white;
+		//border-color: white;
 		border-radius: 10px;
 		padding: 2px 5px;
-		color: black;
+		color: white;
 		text-decoration: none;
 		font-size: 11pt;
 	}
@@ -179,6 +179,7 @@ img {
 	font-size: 30pt;
 	line-height: 50px;
 	column-gap: 0px;
+	color: orange;
 }
 
 /* LOCAL ARCHIVE PAGE SETTINGS */
@@ -229,6 +230,11 @@ img {
 	}
 
 	.nav a:not(.home-link) {
+		color: black;
+		filter: invert(1);
+	}
+
+	.index {
 		filter: invert(1);
 	}
 

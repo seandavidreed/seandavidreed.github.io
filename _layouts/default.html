@@ -23,6 +23,14 @@
 	</head>
 	<body>
 		<script>
+			function activePage() {
+				const page = document.title;
+				document.getElementById(page).style.background = "orange";
+				document.getElementById(page).style.color = "white";
+			}	
+			window.addEventListener("load", activePage);
+		</script>
+		<script>
 			const darkmode = new Darkmode();
 			
 			function scrollToTop() {
@@ -55,17 +63,17 @@
 			<div style="align-self: center; justify-self: end;">
 				<a class="home-link" href="/index.html" style="text-decoration: none;">
 				<div class="index">
-					<h2 style="margin: 0px; padding-right: 5px; color: white; float: right;">Sean</h2>
-					<h2 style="margin: 0px; padding-right: 5px; color: white">David</h2>
-					<h2 style="margin: 0px; padding-right: 5px; color: white; float: right;">Reed</h2>
+					<h2 style="margin: 0px; padding-right: 5px; float: right;">Sean</h2>
+					<h2 style="margin: 0px; padding-right: 5px;">David</h2>
+					<h2 style="margin: 0px; padding-right: 5px; float: right;">Reed</h2>
 				</div>
 				</a>
 			</div>
 			<div style="align-self: center; height: 120px">
-				<div class="page-link"><a href="/about.html">About</a></div>
-				<div class="page-link"><a href="/blog.html">Blog</a></div>
-				<div class="page-link"><a href="/guides.html">Guides</a></div>
-				<div class="page-link"><a href="/projects.html">Projects</a></div>
+				<div class="page-link"><a id="About" href="/about.html">About</a></div>
+				<div class="page-link"><a id="Blog" href="/blog.html">Blog</a></div>
+				<div class="page-link"><a id="Guides" href="/guides.html">Guides</a></div>
+				<div class="page-link"><a id="Projects" href="/projects.html">Projects</a></div>
 				<div>
 					<input id="lightmode" class="darkmode-input" type="image" alt="lightmode" src="/images/light-mode.png" onclick="darkMode(darkmode, true);">
 					<input id="darkmode" class="darkmode-input" type="image" alt="darkmode" src="/images/Crescent-Moon-PNG-Picture.png" onclick="darkMode(darkmode, true);">
