@@ -9,7 +9,7 @@ $bp-smallputer: 992px;
 $bp-largeputer: 1200px;
 
 /* MISC VARIABLES */
-$footer-footprint: 165px;
+$footer-footprint: 180px;
 
 /* IMPORT SELF-HOSTED FONTS */
 @import url("/fonts/Exile/font-settings.css");
@@ -200,6 +200,14 @@ img {
 		color: orange;
 		text-decoration: none;
 	}
+}
+
+.card {
+	box-shadow: 0 8px 16px 0 rgba(0,0,0,0.2);
+	padding: 0 5px 5px;
+	margin: 10px;
+	background-color: #ccc;
+	color: white;
 }
 
 /* MODIFY DARKMODE */
