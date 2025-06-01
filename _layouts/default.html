@@ -51,17 +51,27 @@
 				darkMode(darkmode, false); 
 			});
 		</script>
-		<nav>
-			<a href="/index.html">Home</a>
-			<a href="/about.html">About</a>
-			<a href="/blog.html">Blog</a>
-			<a href="/guides.html">Guides</a>
-			<a href="/projects.html">Projects</a>
-			<div>
-				<input id="lightmode" class="darkmode-input" type="image" alt="lightmode" src="/images/light-mode.png" onclick="darkMode(darkmode, true);">
-				<input id="darkmode" class="darkmode-input" type="image" alt="darkmode" src="/images/Crescent-Moon-PNG-Picture.png" onclick="darkMode(darkmode, true);">
+		<div class="nav">
+			<div style="align-self: center; justify-self: end;">
+				<a class="home-link" href="/index.html" style="text-decoration: none;">
+				<div class="index">
+					<h2 style="margin: 0px; padding-right: 5px; color: white; float: right;">Sean</h2>
+					<h2 style="margin: 0px; padding-right: 5px; color: white">David</h2>
+					<h2 style="margin: 0px; padding-right: 5px; color: white; float: right;">Reed</h2>
+				</div>
+				</a>
 			</div>
-		</nav>
+			<div style="align-self: center; height: 120px">
+				<div class="page-link"><a href="/about.html">About</a></div>
+				<div class="page-link"><a href="/blog.html">Blog</a></div>
+				<div class="page-link"><a href="/guides.html">Guides</a></div>
+				<div class="page-link"><a href="/projects.html">Projects</a></div>
+				<div>
+					<input id="lightmode" class="darkmode-input" type="image" alt="lightmode" src="/images/light-mode.png" onclick="darkMode(darkmode, true);">
+					<input id="darkmode" class="darkmode-input" type="image" alt="darkmode" src="/images/Crescent-Moon-PNG-Picture.png" onclick="darkMode(darkmode, true);">
+				</div>
+			</div>
+		</div>
 		<div class="main">
 			{{ content }}
 		</div>
