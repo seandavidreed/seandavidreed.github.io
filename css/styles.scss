@@ -210,6 +210,10 @@ img {
 	color: white;
 }
 
+*:disabled {
+	opacity: 1;
+}
+
 /* MODIFY DARKMODE */
 #lightmode {
 	background-color: orange;
