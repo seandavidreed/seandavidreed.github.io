@@ -29,11 +29,7 @@ body {
 	position: relative;
 	
 	/* UNIVERSAL TYPEFACE SETTINGS */
-	font-family: "Lucida Sans Typewriter", 
-		     "Lucida Console", 
-		     "monaco", 
-		     "Bitstream Vera Sans Mono", 
-		     "monospace"; 
+	font-family: "Montserrat", sans-serif; 
 	font-size: 12pt;
 	line-height: 1.5;
 }
@@ -46,11 +42,13 @@ body {
 	grid-template-columns: 1.5fr 1.0fr;
 	height: 180px;
 	width: 100%;
+	font-family: "Lucida Sans Typewriter", 
+		     "Lucida Console", 
+		     "monaco", 
+		     "Bitstream Vera Sans Mono", 
+		     "monospace"; 
 	
 	a:not(.home-link) {
-		//border: 2px solid;
-		//background-color: white;
-		//border-color: white;
 		border-radius: 10px;
 		padding: 2px 5px;
 		color: white;
@@ -93,6 +91,11 @@ footer {
 	width: 100%;
 	height: $footer-footprint;
 	bottom: 0;
+	font-family: "Lucida Sans Typewriter", 
+		     "Lucida Console", 
+		     "monaco", 
+		     "Bitstream Vera Sans Mono", 
+		     "monospace";
 
 	a {
 		padding-left: 15px;

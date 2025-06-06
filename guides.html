@@ -11,8 +11,8 @@ When I configure a server, tinker with a Linux distribution, flash firmware to a
 <hr>
 	{% assign guides = site.tech_guides | reverse %}
 	{% for guide in guides %}
-		<span style="float: left; color: gray; font-family: Montserrat, sans-serif; font-size: 10">{{ guide.date | date: "%m/%d/%Y" }}</span>
-		<div style="display: block; padding: 0px 0px 0px 90px; font-family: Lucida Console, Monaco, monospace">
+		<span style="float: left; color: gray; font-size: 10">{{ guide.date | date: "%m/%d/%Y" }}</span>
+		<div style="display: block; padding: 0px 0px 0px 90px;">
 				<a href="{{ guide.url }}">{{ guide.title }}</a>
 		</div>
 	{% endfor %}
